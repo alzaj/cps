@@ -1,0 +1,10 @@
+﻿
+Log Entry :<br />
+Client Host: 172.23.32.36;<br />
+February 11, 2011 14:27<br />
+Error in: http://websrv/haeko_dev/report/newparticipant.aspx.<br />
+Error Message:newparticipant.aspx - Inserting failed.
+ Details: Der Variablenname '@registrationdate' wurde bereits deklariert. Variablennamen müssen in einem Abfragebatch oder in einer gespeicherten Prozedur eindeutig sein.
+Falsche Syntax in der Nähe des 'VALUES'-Schlüsselwortes.
+Die "@newID"-Skalarvariable muss deklariert werden.<br />
+__________________________

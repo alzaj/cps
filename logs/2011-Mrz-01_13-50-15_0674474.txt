@@ -1,0 +1,8 @@
+﻿
+Log Entry :<br />
+March 1, 2011 13:50<br />
+Client Host: 172.23.32.36;<br />
+Client System: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13 ( .NET CLR 3.5.30729)<br />
+Error in: http://websrv/haeko_dev/report/default.aspx.<br />
+Error Message:Berechnen von Statistiken fehlgeschlagen. .NET sagt: Der Argumentdatentyp ntext ist für das 1-Argument der len-Funktion ungültig.<br />
+__________________________

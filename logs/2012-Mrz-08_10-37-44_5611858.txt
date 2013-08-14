@@ -1,0 +1,16 @@
+﻿
+Log Entry :<br />
+March 8, 2012 10:37<br />
+Client Host: 172.23.32.71;<br />
+Client System: Mozilla/5.0 (Windows NT 5.1; rv:10.0.2) Gecko/20100101 Firefox/10.0.2<br />
+Error in: https://websrv:11443/haeko2011_agent/registration/default.aspx.<br />
+Error Message:März 08, 2012 10:37:44<br />
+Ihre Daten wurden gespeichert, aber die Bestätigungsmail konnte nicht an die von Ihnen angegebene E-Mail-Adresse gesendet werden.(Alexander.Zajcev@cpfs.mpg.de).<br />
+Information for the web developer: for the application to be able to send e-mails in the application settings the following sections should be properly configured:<br>
+Section SmtpServerName should contain the alias of the Smtp Server<br>
+Section FromEmailForThisApplication should contain a valid e-mail address that will be placed in the from field of the e-mail<br>
+Section FromEmailUserName should contain the name of the user (only name without domain name) that has permissions to send from this e-mail<br>
+Section FromEmailPassword shoud contain the password for this user<br>
+<br />
+<br />
+__________________________

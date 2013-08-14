@@ -1,0 +1,14 @@
+﻿
+Log Entry :<br />
+February 25, 2011 09:35<br />
+Client Host: 172.23.32.36;<br />
+Client System: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13 ( .NET CLR 3.5.30729)<br />
+Error in: http://websrv/haeko_dev/report/default.aspx?memberid=109.<br />
+Error Message:Multiple controls with the same ID 'pegment' were found. FindControl requires that controls have unique IDs.<br>
+<br>
+   at System.Web.UI.Control.FillNamedControlsTable(Control namingContainer, ControlCollection controls)<br />
+   at System.Web.UI.Control.FillNamedControlsTable(Control namingContainer, ControlCollection controls)<br />
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)<br />
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)<br />
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br />
+__________________________

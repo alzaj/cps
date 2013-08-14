@@ -1,0 +1,8 @@
+﻿
+Log Entry :<br />
+February 15, 2011 09:04<br />
+Client Host: 172.23.32.36;<br />
+Client System: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13 ( .NET CLR 3.5.30729)<br />
+Error in: http://websrv/haeko_dev/report/login.aspx.<br />
+Error Message:Versuch der Anmeldung mit ungültigen Anmeldedaten<br />
+__________________________

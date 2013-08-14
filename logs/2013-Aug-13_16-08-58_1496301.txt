@@ -1,0 +1,17 @@
+﻿
+Log Entry :<br />
+August 13, 2013 16:08<br />
+Client Host: 172.23.32.71;<br />
+Client System: Mozilla/5.0 (Windows NT 5.1; rv:22.0) Gecko/20100101 Firefox/22.0<br />
+Error in: http://websrv:10080/170.aspx.<br />
+Error Message:The file '/TabsMenuGreen.master' does not exist.<br>
+<br>
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)<br />
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)<br />
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)<br />
+   at System.Web.UI.MasterPage.CreateMaster(TemplateControl owner, HttpContext context, VirtualPath masterPageFile, IDictionary contentTemplateCollection)<br />
+   at System.Web.UI.Page.get_Master()<br />
+   at System.Web.UI.Page.ApplyMasterPage()<br />
+   at System.Web.UI.Page.PerformPreInit()<br />
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br />
+__________________________

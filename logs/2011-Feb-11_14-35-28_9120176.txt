@@ -1,0 +1,9 @@
+﻿
+Log Entry :<br />
+Client Host: 172.23.32.36;<br />
+February 11, 2011 14:35<br />
+Error in: http://websrv/haeko_dev/report/newparticipant.aspx.<br />
+Error Message:newparticipant.aspx - Inserting failed.
+ Details: Der Wert NULL kann in die 'vegetarier'-Spalte, 'haeko_dev.dbo.temp_participants'-Tabelle nicht eingefügt werden. Die Spalte lässt NULL-Werte nicht zu. Fehler bei INSERT.
+Die Anweisung wurde beendet.<br />
+__________________________

@@ -1,0 +1,8 @@
+﻿
+Log Entry :<br />
+March 3, 2011 16:16<br />
+Client Host: 172.23.32.36;<br />
+Client System: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.14) Gecko/20110218 Firefox/3.6.14 ( .NET CLR 3.5.30729)<br />
+Error in: http://websrv/haeko_dev/report/login.aspx?action=logout.<br />
+Error Message:Versuch der Anmeldung mit ungültiger IP. Siehe ApplicationSettings.IsThisAppFeldmaessig<br />
+__________________________

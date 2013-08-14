@@ -1,0 +1,79 @@
+<%@ Master Language="VB" CodeFile="TabsMenuGreen.master.vb" Inherits="Tabs" %>
+<%@ Register TagPrefix="cpfs" TagName="News" Src="~/servicescripts/news.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+<title>HaeKo 2011</title>
+<asp:ContentPlaceHolder id="head" runat="server">
+</asp:ContentPlaceHolder>
+<asp:ContentPlaceHolder ID="masterStylePlaceHolder" runat="server" EnableViewState="false">
+</asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+<h1>Hemdsärmelkolloquium vom
+<%= qcnp09.D_WORKSHOP_START.ToString("%d.", qcnp09.D_DATUM_FORMAT)%>
+<%  If qcnp09.D_WORKSHOP_START.Month <> qcnp09.D_WORKSHOP_ENDE.Month Then%>
+<%= qcnp09.D_WORKSHOP_START.ToString("MMMM", qcnp09.D_DATUM_FORMAT)%>
+<% End If%>
+<%  If qcnp09.D_WORKSHOP_START.Year <> qcnp09.D_WORKSHOP_ENDE.Year Then%>
+<%= qcnp09.D_WORKSHOP_START.ToString("yyyy", qcnp09.D_DATUM_FORMAT)%>
+<% End If%>
+bis
+<%= qcnp09.D_WORKSHOP_ENDE.ToString("%d. MMMM yyyy", qcnp09.D_DATUM_FORMAT)%>
+<br />in der <span style="white-space:nowrap;">Dreikönigskirche Dresden</span></h1>
+<div id="header">
+<ul id="primary">
+<asp:Repeater runat="server" ID="menu" DataSourceID="SiteMapDataSource1" EnableViewState="False">
+<ItemTemplate><%#Navigation.BuildPrimaryListItem((CType(Container.DataItem, SiteMapNode)))%>
+</ItemTemplate>
+</asp:Repeater>
+</ul>
+<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+</div>
+<div id="main">
+<div style="position:absolute;right:3em;top:12.5em;font-size:85%;">
+    <asp:HyperLink ID="printViewLink" runat="server" OnLoad="PrintViewOnLoad" Target="_blank">Druckversion</asp:HyperLink>
+</div>
+<div id="contents">
+  <div id="leftside">
+  <img src="<%= Me.ResolveUrl("~/images/punkt.png") %>" alt="" style="width:1px;height:500px;float:right;" />
+  <div style="margin: 1.5em;">
+<asp:contentplaceholder id="MainContent" runat="server">
+</asp:contentplaceholder>
+  </div>
+  <br style="clear:right;" /> 
+  </div> <!-- leftside -->
+  <%-- If you turn on the rightpanel set width of #leftside css element to 75% --%>
+  <%-- If you turn off the rightpanel (comment out the rightside div) set width of #leftside css element to 100% --%>
+ 
+  <div id="rightside">
+  <div style="margin: 1.5em 0 1.5em 0;padding: 0 1.5em 0 1.5em;background-color: #E6F2F2;"> 
+<cpfs:News runat="server" />
+  </div>
+  </div>
+  <!-- rightside -->
+
+<div style="clear:both;">
+</div>
+<div style="clear:both;">
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footerleft">
+<a href="http://www.cpfs.mpg.de/" target="_blank" title="Max-Planck-Institut für Chemische Physik fester Stoffe"><img src='<%= Me.ResolveUrl("~/images/mpg-small.png") %>' alt="MPG" style="border:0 none;" /></a>
+&nbsp;&nbsp;
+<a href="http://www.chm.tu-dresden.de/ac/" target="_blank" title="Technische Universität Dresden, Institut für Anorganische Chemie"><img src='<%= Me.ResolveUrl("~/images/tu-small.png") %>' alt="TU Dresden" style="border:0 none;" /></a>
+</div>
+<div id="footerright">
+© <%= Now.ToString("yyyy", qcnp09.D_DATUM_FORMAT)%>, Max-Planck-Institut für Chemische Physik fester Stoffe
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="<%= Me.ResolveUrl("~/impressum/default.html") %>">Impressum</a>
+</div>
+</div>
+</form>
+</body>
+</html>

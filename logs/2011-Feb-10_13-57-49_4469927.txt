@@ -1,0 +1,14 @@
+﻿
+Log Entry :<br />
+Client Host: 172.23.32.36;<br />
+February 10, 2011 13:57<br />
+Error in: http://websrv/haeko_dev/sponsors/default.aspx.<br />
+Error Message:Conversion from string "<div style="position:relative">" to type 'Double' is not valid.<br>
+<br>
+   at Microsoft.VisualBasic.CompilerServices.Conversions.ToDouble(String Value, NumberFormatInfo NumberFormat)<br />
+   at sponsors_default.RenderSponsor(SponsorElement se, Boolean float) in C:\inetpub\haeko_dev\haeko\sponsors\default.aspx.vb:line 97<br />
+   at sponsors_default.Page_Load(Object sender, EventArgs e) in C:\inetpub\haeko_dev\haeko\sponsors\default.aspx.vb:line 58<br />
+   at System.Web.UI.Control.OnLoad(EventArgs e)<br />
+   at System.Web.UI.Control.LoadRecursive()<br />
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br />
+__________________________

@@ -1,0 +1,103 @@
+﻿<%@ Master Language="VB" CodeFile="bootstrap.master.vb" Inherits="bootstrap" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>ASPIMATT</title>
+<asp:ContentPlaceHolder id="head" runat="server">
+</asp:ContentPlaceHolder>
+<asp:ContentPlaceHolder ID="masterStylePlaceHolder" runat="server" EnableViewState="false">
+</asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <!-- Wrap all page content here -->
+    <div id="wrap">
+<form id="form1" runat="server">
+      <!-- Fixed navbar -->
+      <div class="navbar">
+        <div class="container">
+			<a class="navbar-brand" href="#">ASPIMATT</a>
+			<ul class="nav nav-pills pull-right">
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#">Projects 2013-2015</a></li>
+			  <li class="active"><a href="#">Projects 2010-2012</a></li>
+			  <li><a href="#sitemap">Sitemap</a></li>
+			  <li><a href="#contact">Contact</a></li>
+			</ul>
+        </div>
+      </div>
+
+      <!-- Begin page content -->
+      <div class="container">
+	  
+<!--		
+        <div class="page-header">
+          <h3>Sticky footer with fixed navbar</h3>
+        </div>
+
+		<div class="page-header">
+			<h1>Bootstrap grids</h1>
+		</div>
+
+      <h4>Mixed: mobile, tablet, and desktop</h4>
+-->
+      <div class="row">
+<div class="col-12 col-sm-4 col-lg-3">
+
+<div class="list-group">
+
+<asp:Repeater runat="server" ID="menu" DataSourceID="SiteMapDataSource1" EnableViewState="False">
+<ItemTemplate><%#Me.RenderNaviItem((CType(Container.DataItem, SiteMapNode)), 1)%>
+</ItemTemplate>
+</asp:Repeater>
+<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+</div>
+</div>
+
+<div class="col-12 col-sm-8 col-lg-6 article">
+<asp:contentplaceholder id="MainContent" runat="server">
+</asp:contentplaceholder>
+</div>
+<div class="col-12 col-sm-12 col-lg-3">
+<!-- .col-12 .col-sm-12 .col-lg-3 -->
+
+<div class="panel panel-info">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><h4>Related links</h4></div>
+
+  <!-- List group -->
+  <ul class="list-group">
+    <li class="list-group-item"><a href="#rellink1">DFG Research Unit 559</a></li>
+    <li class="list-group-item"><a href="#rellink2">MAINZ (MAterials Science IN MainZ)</a></li>
+    <li class="list-group-item"><a href="#rellink3">Johannes Gutenberg University Mainz</a></li>
+    <li class="list-group-item"><a href="#rellink4">University Kaiserslautern, Dep. of Physics</a></li>
+    <li class="list-group-item"><a href="#rellink5">Tohoku University Sendai</a></li>
+	<li class="list-group-item"><a href="#rellink6">DFG - German Research Foundation</a></li>
+  </ul>
+</div>
+
+
+</div>
+
+      </div>
+
+      </div>
+    </form>
+	  <div id="push"></div>
+    </div>
+
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted credit pull-right"><a href="#impressum">Impressum</a></p>
+      </div>
+    </div>
+</body>
+</html>

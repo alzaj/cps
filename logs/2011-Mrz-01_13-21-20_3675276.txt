@@ -1,0 +1,10 @@
+﻿
+Log Entry :<br />
+March 1, 2011 13:21<br />
+Client Host: 172.23.32.36;<br />
+Client System: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13 ( .NET CLR 3.5.30729)<br />
+Error in: http://websrv/haeko_dev/report/default.aspx.<br />
+Error Message:Berechnen von Statistiken fehlgeschlagen. .NET sagt: Bezeichner (beginnend mit ')) AS anzvortrag, (SELECT COUNT(*) FROM [temp_participantsstatistik] WHERE ([listeeintrag] = 1)) AS anzlisteeintrag, (SELECT COU') ist zu lang. Die maximal zulässige Länge beträgt 128.
+Kein schließendes Anführungszeichen nach der Zeichenfolge ')) AS anzvortrag, (SELECT COUNT(*) FROM [temp_participantsstatistik] WHERE ([listeeintrag] = 1)) AS anzlisteeintrag, (SELECT COUN'.
+Falsche Syntax in der Nähe von ')) AS anzvortrag, (SELECT COUNT(*) FROM [temp_participantsstatistik] WHERE ([listeeintrag] = 1)) AS anzlisteeintrag, (SELECT COU'.<br />
+__________________________

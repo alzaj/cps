@@ -1,0 +1,42 @@
+/* erstes top_menu */
+div#menu_top_1{
+padding-top:59px;
+
+}
+div#menu_top_1 ul li{
+	/* 
+	background-image: url(../../images/menu/top/spacer.gif);
+	background-position:top right;
+	background-repeat: no-repeat;
+	*/
+}
+div#menu_top_1 ul li a{
+	line-height: 17px;
+	padding-left: 10px;
+	padding-right: 15px;
+	margin-right: 1px;
+	margin-left: 1px;
+	text-decoration: none;
+	
+}
+
+div#menu_top_1 ul li.level-1-cur a, div#menu_top_1 ul li.level-1-act a {
+  text-decoration: none;
+  background-color:#fff;
+  color:#2d5e99;
+}
+
+div#menu_top_1 ul li.level-1-no a{
+	
+	color:#fff;
+}
+
+div#menu_top_1 ul li a:hover, div#menu_top_1 ul li.level-1-act a, div#menu_top_1 ul li.level-1-cur a{
+	/* 
+	background-repeat:repeat-x;
+	background-position: 0 25px;
+	background-image: url(../../images/menu/top/act-bg.gif);
+	*/
+}
+
+

@@ -1,0 +1,16 @@
+﻿
+Log Entry :<br />
+February 25, 2011 14:53<br />
+Client Host: 172.23.32.36;<br />
+Client System: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13 ( .NET CLR 3.5.30729)<br />
+Error in: http://websrv/haeko_dev/report/default.aspx?memberid=107.<br />
+Error Message:Unable to cast object of type 'System.Collections.Specialized.ListDictionary' to type 'System.Collections.Generic.List`1[System.Web.UI.Triplet]'.<br>
+<br>
+   at _index.get_LockedRecords() in C:\inetpub\haeko_dev\haeko\report\default.aspx.vb:line 159<br />
+   at _index.LockRecordForEditing(Int32 recordID) in C:\inetpub\haeko_dev\haeko\report\default.aspx.vb:line 1061<br />
+   at _index.LoadDetailsPanel() in C:\inetpub\haeko_dev\haeko\report\default.aspx.vb:line 560<br />
+   at _index.Page_Load(Object sender, EventArgs e) in C:\inetpub\haeko_dev\haeko\report\default.aspx.vb:line 297<br />
+   at System.Web.UI.Control.OnLoad(EventArgs e)<br />
+   at System.Web.UI.Control.LoadRecursive()<br />
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br />
+__________________________

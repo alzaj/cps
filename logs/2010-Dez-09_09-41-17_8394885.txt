@@ -1,0 +1,28 @@
+﻿
+Log Entry :<br />
+Client Host: 172.23.0.24;<br />
+December 9, 2010 09:41<br />
+Error in: http://websrv/haeko_dev/report/default.aspx.<br />
+Error Message:DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'bemerkungenparticipant'.<br>
+<br>
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)<br />
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)<br />
+   at ASP.report_default_aspx.__DataBinding__control133(Object sender, EventArgs e) in C:\inetpub\haeko_dev\haeko\report\default.aspx:line 344<br />
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)<br />
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)<br />
+   at System.Web.UI.Control.DataBindChildren()<br />
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)<br />
+   at System.Web.UI.Control.DataBindChildren()<br />
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)<br />
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)<br />
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)<br />
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)<br />
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)<br />
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)<br />
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()<br />
+   at _index.LoadListePanel() in C:\inetpub\haeko_dev\haeko\report\default.aspx.vb:line 566<br />
+   at _index.Page_Load(Object sender, EventArgs e) in C:\inetpub\haeko_dev\haeko\report\default.aspx.vb:line 252<br />
+   at System.Web.UI.Control.OnLoad(EventArgs e)<br />
+   at System.Web.UI.Control.LoadRecursive()<br />
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br />
+__________________________

@@ -1,0 +1,24 @@
+﻿
+Log Entry :<br />
+August 12, 2013 13:14<br />
+Client Host: 172.23.32.71;<br />
+Client System: Mozilla/5.0 (Windows NT 5.1; rv:22.0) Gecko/20100101 Firefox/22.0<br />
+Error in: http://websrv:10080/styles/default.aspx?setTheme=bootstrap.<br />
+Error Message:Object reference not set to an instance of an object.<br>
+<br>
+   at bootstrap.RenderNaviItem(SiteMapNode nod) in C:\inetpub\demoapps\unimainz\bootstrap.master.vb:line 18<br />
+   at ASP.bootstrap_master.__DataBind__control10(Object sender, EventArgs e) in C:\inetpub\demoapps\unimainz\bootstrap.master:line 57<br />
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)<br />
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)<br />
+   at System.Web.UI.Control.DataBindChildren()<br />
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)<br />
+   at System.Web.UI.WebControls.Repeater.CreateControlHierarchy(Boolean useDataSource)<br />
+   at System.Web.UI.WebControls.Repeater.OnDataBinding(EventArgs e)<br />
+   at System.Web.UI.WebControls.Repeater.EnsureDataBound()<br />
+   at System.Web.UI.WebControls.Repeater.OnPreRender(EventArgs e)<br />
+   at System.Web.UI.Control.PreRenderRecursiveInternal()<br />
+   at System.Web.UI.Control.PreRenderRecursiveInternal()<br />
+   at System.Web.UI.Control.PreRenderRecursiveInternal()<br />
+   at System.Web.UI.Control.PreRenderRecursiveInternal()<br />
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br />
+__________________________

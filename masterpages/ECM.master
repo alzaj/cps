@@ -1,0 +1,107 @@
+<%@ Master Language="VB" CodeFile="ECM.master.vb" Inherits="ECM" %>
+<%@ Register TagPrefix="cpfs" TagName="News" Src="news.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body class="nmlib-skin-default">
+    <form id="form1" runat="server">
+
+
+<a name="page-top"></a>
+<div id="page" style="text-align: center;" align="center">
+<div id="custom-doc" class="document">
+
+<%--<div style="background-color: rgb(255, 255, 255); height: 20px;">
+ <marquee scrollamount="5"><b style="color: rgb(247, 76, 68);">+++ Extended early bird registration deadline: June 18 +++</b></marquee>
+</div>--%>
+
+<div id="main-template" class="###CSS_CLASS_LANG###">
+  <div id="hd">
+  	<div id="hd_wrapper">
+  		
+	</div><br class="stopFloat">
+  </div>
+  <div id="bd">
+  <div id="bd_wrapper">
+<div class="yui-gb left-normal-right">	
+<div class="yui-u col-1 first left">
+<div id="left"><div class="col-wrapper">
+<div id="navigation">
+<ul id="primary">
+<asp:Repeater runat="server" ID="menu" DataSourceID="SiteMapDataSource1" EnableViewState="False">
+<ItemTemplate><%#Navigation.BuildPrimaryListItem((CType(Container.DataItem, SiteMapNode)))%>
+</ItemTemplate>
+</asp:Repeater>
+</ul>
+<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+<div style="margin: 1.5em 0.5em 0 0.5em;font-size: 80%;">
+<h2>News</h2>
+<cpfs:News runat="server" />
+</div>
+</div>
+</div>
+</div>
+<br class="stopFloat" />
+</div>
+<div class="yui-u col-2 normal">
+<div id="scroll-normal" class="normal">
+<div class="col-wrapper">
+<div class="csc-row">
+<div class="csc-row-wrapper">
+<a id="c2709"></a>
+<asp:contentplaceholder id="MainContent" runat="server">
+</asp:contentplaceholder>
+</div>
+</div>
+<div style="margin-left: 10px; text-align: center; margin-bottom: 2em;">
+<a href="http://conventus.de/index.php?id=1656#page-top">on top</a>
+</div>
+</div>
+</div>
+<br class="stopFloat">
+</div>
+<div class="yui-u col-3 right">
+<div id="right">
+<div class="col-wrapper" style="position:relative;top:28.5em;margin:0 13px 0 7px;padding-top:2px;">
+<div class="message-right">
+<span style="font-weight:bold;color:Red;">Important message!</span>
+</div>
+</div>
+</div>
+<br class="stopFloat">
+</div>
+</div>
+</div>
+</div>
+<div id="ft">
+<div class="yui-g left-normal">
+<a style="color: #ffffff; text-decoration: none; font-size: 12px; font-family: Arial; line-height: 44px; float: left; margin-left: 235px;" target="_blank" href="http://www.cpfs.mpg.de">
+Organiser: Max-Plank-Institut für Chemische Physik fester Stoffe
+</a>
+<asp:HyperLink ID="printViewLink" style="color: #ffffff; text-decoration: none; font-size: 12px; font-family: Arial; line-height: 44px; float: right; margin-right: 30px;" target="_blank" runat="server" OnLoad="PrintViewOnLoad">
+Print View
+</asp:HyperLink>
+
+<div class="yui-u col-1 first left">
+<div class="col-wrapper">
+<br class="stopFloat">
+</div>
+<br class="stopFloat">
+</div>
+ <div class="yui-u col-2 normal-right">
+ <div class="col-wrapper">
+ <br class="stopFloat"></div><br class="stopFloat"></div>
+ </div>
+ </div>
+ </div>
+</div></div>
+
+
+
+    </form>
+</body>
+</html>

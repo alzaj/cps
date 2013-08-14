@@ -1,0 +1,32 @@
+﻿
+Log Entry :<br />
+March 4, 2011 13:18<br />
+Client Host: 172.23.32.36;<br />
+Client System: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.14) Gecko/20110218 Firefox/3.6.14 ( .NET CLR 3.5.30729)<br />
+Error in: http://websrv/haeko_dev/report/default.aspx.<br />
+Error Message:Falsche Syntax in der Nähe von '>'.<br>
+<br>
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)<br />
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)<br />
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)<br />
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()<br />
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()<br />
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)<br />
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)<br />
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)<br />
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)<br />
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)<br />
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)<br />
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)<br />
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)<br />
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)<br />
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)<br />
+   at System.Web.UI.WebControls.SqlDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)<br />
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)<br />
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()<br />
+   at _index.LoadListePanel(Boolean needGeneratingSqlCommand) in C:\inetpub\haeko_dev\haeko\report\default.aspx.vb:line 717<br />
+   at _index.Page_Load(Object sender, EventArgs e) in C:\inetpub\haeko_dev\haeko\report\default.aspx.vb:line 343<br />
+   at System.Web.UI.Control.OnLoad(EventArgs e)<br />
+   at System.Web.UI.Control.LoadRecursive()<br />
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br />
+__________________________

@@ -1,0 +1,18 @@
+﻿
+Log Entry :<br />
+February 25, 2011 16:31<br />
+Client Host: 172.23.32.36;<br />
+Client System: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.1; .NET CLR 3.5.21022; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MS-RTC LM 8)<br />
+Error in: http://websrv/haeko_dev/report/default.aspx?memberid=107.<br />
+Error Message:Unable to cast object of type 'System.Web.UI.Pair' to type 'System.IConvertible'.<br>
+<br>
+   at System.Convert.ToInt64(Object value)<br />
+   at _index.Details_MemberFormView_ItemUpdating(Object sender, FormViewUpdateEventArgs e) in C:\inetpub\haeko_dev\haeko\report\default.aspx.vb:line 1142<br />
+   at System.Web.UI.WebControls.FormView.HandleUpdate(String commandArg, Boolean causesValidation)<br />
+   at System.Web.UI.WebControls.FormView.HandleEvent(EventArgs e, Boolean causesValidation, String validationGroup)<br />
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)<br />
+   at System.Web.UI.WebControls.FormViewRow.OnBubbleEvent(Object source, EventArgs e)<br />
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)<br />
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)<br />
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br />
+__________________________

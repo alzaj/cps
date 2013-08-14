@@ -1,0 +1,24 @@
+<%@ Master Language="VB" CodeFile="qcnp09.master.vb" Inherits="qcnp09_qcnp09" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>HaeKo 2011 Teilnehmer</title>
+<style type="text/css">
+.gridViewSelected A{color:white;}
+.gridViewSelected {color:white;}
+</style> 
+</head>
+<body>
+    <form id="form1" runat="server">
+<div>
+<table style="margin:auto;"><tr><td>
+        <asp:HyperLink ID="abmeldenHyperLink" runat="server" NavigateUrl="~/report/default.aspx?action=logout" >Abmelden</asp:HyperLink><br />
+        <asp:contentplaceholder id="ContentPlaceHolderOben" runat="server">
+        </asp:contentplaceholder>
+</td></tr></table>
+</div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+﻿
+Log Entry :<br />
+Client Host: 172.23.0.24;<br />
+December 8, 2010 16:55<br />
+Error in: http://websrv/haeko_dev/report/sendmail.aspx.<br />
+Error Message:Cannot find ContentPlaceHolder 'MainContent' in the master page 'qcnp09.master', verify content control's ContentPlaceHolderID attribute in the content page.<br>
+<br>
+   at System.Web.UI.MasterPage.CreateMaster(TemplateControl owner, HttpContext context, VirtualPath masterPageFile, IDictionary contentTemplateCollection)<br />
+   at System.Web.UI.Page.get_Master()<br />
+   at System.Web.UI.Page.ApplyMasterPage()<br />
+   at System.Web.UI.Page.PerformPreInit()<br />
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br />
+__________________________

@@ -1,0 +1,26 @@
+﻿
+Log Entry :<br />
+February 22, 2011 14:36<br />
+Client Host: 172.23.32.36;<br />
+Client System: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13 ( .NET CLR 3.5.30729)<br />
+Error in: http://websrv/haeko_dev/report/default.aspx.<br />
+Error Message:A field or property with the name 'participanttermin' was not found on the selected data source.<br>
+<br>
+   at System.Web.UI.WebControls.BoundField.GetValue(Control controlContainer)<br />
+   at System.Web.UI.WebControls.BoundField.OnDataBindField(Object sender, EventArgs e)<br />
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)<br />
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)<br />
+   at System.Web.UI.Control.DataBindChildren()<br />
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)<br />
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)<br />
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)<br />
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)<br />
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)<br />
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)<br />
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()<br />
+   at _index.LoadListePanel() in C:\inetpub\haeko_dev\haeko\report\default.aspx.vb:line 574<br />
+   at _index.Page_Load(Object sender, EventArgs e) in C:\inetpub\haeko_dev\haeko\report\default.aspx.vb:line 260<br />
+   at System.Web.UI.Control.OnLoad(EventArgs e)<br />
+   at System.Web.UI.Control.LoadRecursive()<br />
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br />
+__________________________

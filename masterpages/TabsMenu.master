@@ -1,0 +1,48 @@
+<%@ Master Language="VB" CodeFile="TabsMenu.master.vb" Inherits="Tabs" %>
+<%@ Register TagPrefix="cpfs" TagName="News" Src="news.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+<title>HaeKo 2011</title>
+</head>
+<body>
+<form id="form1" runat="server">
+<h1>Hemdsärmelkolloquium 2011</h1>
+<div id="header">
+<ul id="primary">
+<asp:Repeater runat="server" ID="menu" DataSourceID="SiteMapDataSource1" EnableViewState="False">
+<ItemTemplate><%#Navigation.BuildPrimaryListItem((CType(Container.DataItem, SiteMapNode)))%>
+</ItemTemplate>
+</asp:Repeater>
+</ul>
+<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+</div>
+<div id="main">
+<div style="position:absolute;right:3em;top:8em;font-size:85%;">
+    <asp:HyperLink ID="printViewLink" runat="server" OnLoad="PrintViewOnLoad" Target="_blank">Print View</asp:HyperLink>
+</div>
+<div id="contents">
+  <div id="leftside">
+  <div style="margin: 1.5em;">
+<asp:contentplaceholder id="MainContent" runat="server">
+</asp:contentplaceholder>
+  </div> 
+  </div> <!-- leftside -->
+  
+  <div id="rightside">
+  <div style="margin: 1.5em"> 
+<cpfs:News runat="server" />
+  </div>
+  </div>
+  <!-- rightside -->
+<div style="clear:both;">
+</div>
+<div style="clear:both;">
+</div>
+</div>
+</div>
+</form>
+</body>
+</html>

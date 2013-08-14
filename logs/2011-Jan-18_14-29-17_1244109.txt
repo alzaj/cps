@@ -1,0 +1,13 @@
+﻿
+Log Entry :<br />
+Client Host: 172.23.32.36;<br />
+January 18, 2011 14:29<br />
+Error in: https://websrv/haeko_dev/registration/default.aspx.<br />
+Error Message:A potentially dangerous Request.Form value was detected from the client (ctl00$MainContent$RegistrationWizard$surnameTextBox="<script></script>").<br>
+<br>
+   at System.Web.HttpRequest.ValidateString(String s, String valueName, String collectionName)<br />
+   at System.Web.HttpRequest.ValidateNameValueCollection(NameValueCollection nvc, String collectionName)<br />
+   at System.Web.HttpRequest.get_Form()<br />
+   at System.Web.UI.Page.DeterminePostBackMode()<br />
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br />
+__________________________
