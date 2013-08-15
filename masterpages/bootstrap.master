@@ -1,13 +1,10 @@
-﻿<%@ Master Language="VB" CodeFile="bootstrap.master.vb" Inherits="bootstrap" %>
-
-<!DOCTYPE html>
+﻿<%@ Master Language="VB" CodeFile="bootstrap.master.vb" Inherits="bootstrap" %><!DOCTYPE html>
 <html>
 <head runat="server">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <title>ASPIMATT</title>
 <asp:ContentPlaceHolder id="head" runat="server">
@@ -26,11 +23,7 @@
             <a name="page_start"></a>
 			<a class="navbar-brand" href="#">ASPIMATT</a>
 			<ul class="nav nav-pills pull-right">
-			  <li><a href="/default.aspx">Home</a></li>
-			  <li><a href="#">Projects 2013-2015</a></li>
-			  <li class="active"><a href="#">Projects 2010-2012</a></li>
-			  <li><a href="#sitemap">Sitemap</a></li>
-			  <li><a href="#contact">Contact</a></li>
+              <%= RenderTopNaviListItems()%>
 			</ul>
         </div>
       </div>

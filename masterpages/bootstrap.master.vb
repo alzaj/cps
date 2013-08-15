@@ -1,4 +1,5 @@
-﻿
+﻿Imports System.Collections.Generic
+
 Partial Class bootstrap
     Inherits System.Web.UI.MasterPage
 
@@ -86,6 +87,52 @@ Partial Class bootstrap
         Return ausgabe
     End Function
 
+    Protected Function RenderTopNaviListItems() As String
+        Dim ausgabe As String = ""
 
+        For Each kvp As KeyValuePair(Of String, String) In MyAppSettings.GetTopNavigationEntries
+            Dim activeStr As String = ""
+            If Not SiteMap.RootNode Is Nothing AndAlso ResolveUrl(kvp.Key) = ResolveUrl(SiteMap.RootNode.Url) Then
+                If Not SiteMap.CurrentNode Is Nothing AndAlso SiteMap.CurrentNode.Equals(SiteMap.RootNode) Then activeStr = " class=""active"""
+            ElseIf isAscendantOrEqualsToCurrentNode(kvp.Key) Then
+                activeStr = " class=""active"""
+            End If
+            ausgabe += "<li" + activeStr + "><a href=""" + ResolveUrl(kvp.Key) + """>" + kvp.Value + "</a></li>" + vbCrLf
+        Next
+
+        Return ausgabe
+    End Function
+
+    ''' <summary>
+    ''' returns true in the case if the current sitemapNode or some of it's ancestors in the sitemap has url that equals to the urlToCheck.
+    ''' 
+    ''' </summary>
+    ''' <param name="urlToCheck"></param>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
+    Private Function isAscendantOrEqualsToCurrentNode(urlToCheck As String) As Boolean
+        Dim ausgabe As Boolean = False
+        Dim cnt As Integer = 0
+        Dim smcn As SiteMapNode = SiteMap.CurrentNode
+        While Not smcn Is Nothing
+            If ResolveUrl(smcn.Url) = ResolveUrl(urlToCheck) Then
+                ausgabe = True
+                Exit While
+            End If
+            smcn = smcn.ParentNode
+        End While
+        Return ausgabe
+    End Function
+
+    Protected Function RenderTopNaviListItem(linkTitle As String, linkUrl As String, isActive As Boolean) As String
+        Dim ausgabe As String = ""
+        '<li class="active"><a href="#">Projects 2010-2012</a></li>
+        Dim liClass As String = ""
+        If isActive Then liClass = " class=""active"""
+
+        ausgabe += "<li" + liClass + "><a href=""" + ResolveUrl(linkUrl) + """>" + linkTitle + "</a></li>"
+
+        Return ausgabe
+    End Function
 End Class
 

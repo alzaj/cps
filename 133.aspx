@@ -6,5 +6,9 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
 133.aspx
+<br />
+<%= ResolveUrl(SiteMap.CurrentNode.Url)%>
+<br />
+<%= ResolveUrl("~/133.aspx")%>
 </asp:Content>
 

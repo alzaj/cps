@@ -1,8 +1,0 @@
-﻿
-Log Entry :<br />
-March 8, 2011 15:42<br />
-Client Host: 172.23.0.3;<br />
-Client System: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-GB; rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13<br />
-Error in: http://websrv/haeko_dev/report/login.aspx.<br />
-Error Message:Versuch der Anmeldung mit ungültiger IP. Siehe ApplicationSettings.thisIPsHavePermissionsToLogIn<br />
-__________________________

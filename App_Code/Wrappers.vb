@@ -1,4 +1,3 @@
-
 ''' <summary>
 ''' Allows setting MasterPage and Theme dynamycally. Redirects to https:\\ if the page must be secure.
 ''' </summary>
