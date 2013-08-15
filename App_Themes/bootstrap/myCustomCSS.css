@@ -59,13 +59,18 @@ a.list-group-item.active2 {
   margin-top: 0;
 }
 
-.panel-heading {
+.panel-info .panel-heading, .nestedNavGroup .panel-heading {
   margin-bottom: 0;
   border-bottom: 0 none;
 }
 
 .panel-heading h4 {
   margin-top: 10px;
+}
+
+.content .panel .panel-heading
+{
+    font-weight:bold;
 }
 
 .article h1{
@@ -83,6 +88,22 @@ a.list-group-item.active2 {
 }
 .container .credit {
   margin: 20px 0;
+}
+
+.page-header 
+{
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.page-header h1
+{
+    margin-top: 0;
+}
+
+.panel .pull-left img, .panel img.pull-left 
+{
+	margin-right: 20px;
 }
 
 #footer {

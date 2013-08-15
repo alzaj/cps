@@ -23,9 +23,10 @@
       <!-- Fixed navbar -->
       <div class="navbar">
         <div class="container">
+            <a name="page_start"></a>
 			<a class="navbar-brand" href="#">ASPIMATT</a>
 			<ul class="nav nav-pills pull-right">
-			  <li><a href="#">Home</a></li>
+			  <li><a href="/default.aspx">Home</a></li>
 			  <li><a href="#">Projects 2013-2015</a></li>
 			  <li class="active"><a href="#">Projects 2010-2012</a></li>
 			  <li><a href="#sitemap">Sitemap</a></li>
