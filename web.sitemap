@@ -34,7 +34,7 @@
 		<siteMapNode title="Task 3: Gilbert damping" url="~/131.aspx" description="Task 3: Gilbert damping"></siteMapNode>
 		<siteMapNode title="Task 4: Lateral spin transport and spin waves including devices" url="~/128.aspx" description="Task 4: Lateral spin transport and spin waves including devices"></siteMapNode>
 	</siteMapNode>
-    <siteMapNode title="unassigned" url="~/unassigned.aspx" description="">
+    <siteMapNode title="invisible" url="~/unassigned.aspx" description="">
         <siteMapNode title="Intern" url="~/160.aspx" description="Intern"></siteMapNode>
         <siteMapNode title="Imprint" url="~/46.aspx" description="Imprint"></siteMapNode>
         <siteMapNode title="ASPIMATT - Advanced spintronic materials and transport phenomena" url="~/002.aspx" description="ASPIMATT - Advanced spintronic materials and transport phenomena"></siteMapNode>

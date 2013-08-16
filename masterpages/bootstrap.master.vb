@@ -13,6 +13,7 @@ Partial Class bootstrap
 
     Public Function RenderNaviItem(nod As SiteMapNode, level As Integer) As String
         Dim ausgabe As String = ""
+        If nod.Title.ToLower = "invisible" Then Return ausgabe
 
         Dim isCurrent As Boolean = False
         Dim isDescCurrent As Boolean = False
