@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-<title>ASPIMATT</title>
+<title></title>
 <asp:ContentPlaceHolder id="head" runat="server">
 </asp:ContentPlaceHolder>
 <asp:ContentPlaceHolder ID="masterStylePlaceHolder" runat="server" EnableViewState="false">
@@ -21,7 +21,7 @@
       <div class="navbar">
         <div class="container">
             <a name="page_start"></a>
-			<a class="navbar-brand" href="#">ASPIMATT</a>
+			<a class="navbar-brand" href="<%= MyAppSettings.HomePageUrl%>"><%= MyAppSettings.WebsiteMiddleName%></a>
 			<ul class="nav nav-pills pull-right">
               <%= RenderTopNaviListItems()%>
 			</ul>

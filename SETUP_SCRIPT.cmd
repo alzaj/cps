@@ -18,6 +18,7 @@
 @echo     - DIR "servicescripts"
 @echo     - FILE "Web.Config"
 @echo     - FILE "Global.asax"
+@echo     - FILE "default.aspx"
 @echo  3) Scripts prompts user to input the full path to the target directory
 @echo     where the symbolic links will be created
 @echo     (as example I assume the user inputs: C:\inetpub\exampleApp)
@@ -36,6 +37,7 @@
 @echo     - mklink /D App_Themes \\websrv\share\unimainz\App_Themes
 @echo     - mklink Web.Config \\websrv\share\unimainz\Web.Config
 @echo     - mklink Global.asax \\websrv\share\unimainz\Global.asax
+@echo     - mklink default.aspx \\websrv\share\unimainz\default.aspx
 @echo     - cd App_Code
 @echo     - mklink /D common_code \\websrv\share\unimainz\App_Code\common_code
 @echo  7) Script prompts unser to input the full path to the directory where 

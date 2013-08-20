@@ -7,6 +7,13 @@ Public Class GeneralWraperPage
 
     Private _currThemeInitiated As Boolean = False
 
+
+    Public Overridable ReadOnly Property PageTitlePrefix As String
+        Get
+            Return MyAppSettings.PageTitlePrefix
+        End Get
+    End Property
+
     Private _currPageTheme As String = ""
     Public Overrides Property StyleSheetTheme() As String
         Get
@@ -49,6 +56,8 @@ Public Class GeneralWraperPage
     End Property
 
     Protected thisPageMustBeSecure As Boolean = False
+
+    Protected useTitlePrefix As Boolean = True
 
     Private Sub Page_Error(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Error
         ErrorReporting.StandardPageErrorHandling()

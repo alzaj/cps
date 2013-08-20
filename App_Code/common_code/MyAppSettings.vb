@@ -15,9 +15,9 @@ Public Class MyAppSettings
 
 #Region "Settings - String"
 
-    Public Shared ReadOnly Property WorkshopHomePage As String
+    Public Shared ReadOnly Property HomePageUrl As String
         Get
-            Return GetStringFromAppSettings("WorkshopHomePage")
+            Return GetStringFromAppSettings("HomePageUrl")
         End Get
     End Property
 
@@ -106,13 +106,19 @@ Public Class MyAppSettings
         End Get
     End Property
 
-    Public Shared ReadOnly Property WorkshopLongName As String
+    Public Shared ReadOnly Property WebsiteMiddleName As String
         Get
-            Dim ausgabe As String = GetStringFromAppSettings("WorkshopLongName", "")
+            Dim ausgabe As String = GetStringFromAppSettings("WebsiteMiddleName", "")
             Return ausgabe
         End Get
     End Property
 
+    Public Shared ReadOnly Property WebsiteLongName As String
+        Get
+            Dim ausgabe As String = GetStringFromAppSettings("WebsiteLongName", "")
+            Return ausgabe
+        End Get
+    End Property
 
     Public Shared ReadOnly Property forceRegistrationFor As String
         Get

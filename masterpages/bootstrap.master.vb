@@ -1,7 +1,7 @@
 ﻿Imports System.Collections.Generic
 
 Partial Class bootstrap
-    Inherits System.Web.UI.MasterPage
+    Inherits MasterOpa
 
     Protected Sub Page_Load(sender As Object, e As System.EventArgs) Handles Me.Load
         Me.masterStylePlaceHolder.Controls.Clear()
@@ -13,7 +13,7 @@ Partial Class bootstrap
 
     Public Function RenderNaviItem(nod As SiteMapNode, level As Integer) As String
         Dim ausgabe As String = ""
-        If nod.Title.ToLower = "invisible" Then Return ausgabe
+        If nod.Title.ToLower = "invisible" Or nod.Description.ToLower = "invisible" Then Return ausgabe
 
         Dim isCurrent As Boolean = False
         Dim isDescCurrent As Boolean = False
@@ -64,7 +64,19 @@ Partial Class bootstrap
         Select Case menuLevel
             Case 1
                 ausgabe += "<div class=""panel nestedNavGroup"">" + vbCrLf
-                ausgabe += "<div class=""panel-heading""><h4>" + expandedNode.Title + "</h4></div>" + vbCrLf
+
+                Dim activePanelStr As String = ""
+                Dim activeLinkStr As String = ""
+                If Not SiteMap.CurrentNode Is Nothing AndAlso SiteMap.CurrentNode.Equals(expandedNode) Then
+                    activePanelStr = " active"
+                    activeLinkStr = " class =""active"""
+                End If
+
+                ausgabe += "<div class=""panel-heading" + activePanelStr + """>"
+                ausgabe += "<a href=""" + ResolveUrl(expandedNode.Url) + """" + activeLinkStr + "><h4>" + vbCrLf
+                ausgabe += expandedNode.Title
+                ausgabe += vbCrLf + "</h4></a></div>" + vbCrLf
+
                 ausgabe += "<div class=""list-group"">" + vbCrLf
             Case 2
                 ausgabe += RenderNaviNode(expandedNode, menuLevel)

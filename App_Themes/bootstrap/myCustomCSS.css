@@ -28,6 +28,11 @@ h4 {
   border: 1px solid rgb(232,196,196); */
 }
 
+.navbar-brand
+{
+    max-width:370px;
+}
+
 .nav-pills > li > a {
 	line-height: 20px;
 	padding: 15px 15px;
@@ -63,6 +68,21 @@ a.list-group-item.active2 {
   margin-bottom: 0;
   border-bottom: 0 none;
 }
+
+.nestedNavGroup .active {
+  background-color: #428bca;
+}
+
+.nestedNavGroup .panel-heading a 
+{
+    color: #333333;
+}
+
+.nestedNavGroup a.active
+{
+    color: #ffffff;
+}
+
 
 .panel-heading h4 {
   margin-top: 10px;
