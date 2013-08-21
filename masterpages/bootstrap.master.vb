@@ -6,7 +6,7 @@ Partial Class bootstrap
     Protected Sub Page_Load(sender As Object, e As System.EventArgs) Handles Me.Load
         Me.masterStylePlaceHolder.Controls.Clear()
         Dim jsText As String = "<script type=""text/javascript"" src=""" + ResolveUrl("~/App_Themes/bootstrap/jquery.js") + """></script>" + vbCrLf
-        jsText += "<script type=""text/javascript"" src=""" + ResolveUrl("~/App_Themes/bootstrap/bootstrap.js") + """></script>" + vbCrLf
+        jsText += "<script type=""text/javascript"" src=""" + ResolveUrl("~/App_Themes/bootstrap/js/bootstrap.js") + """></script>" + vbCrLf
         jsText += "<script type=""text/javascript"" src=""" + ResolveUrl("~/App_Themes/bootstrap/respond.js") + """></script>" + vbCrLf
         Me.masterStylePlaceHolder.Controls.Add(New LiteralControl(jsText))
     End Sub
@@ -63,7 +63,7 @@ Partial Class bootstrap
         Dim ausgabe As String = ""
         Select Case menuLevel
             Case 1
-                ausgabe += "<div class=""panel nestedNavGroup"">" + vbCrLf
+                ausgabe += "<div class=""panel panel-default nestedNavGroup"">" + vbCrLf
 
                 Dim activePanelStr As String = ""
                 Dim activeLinkStr As String = ""

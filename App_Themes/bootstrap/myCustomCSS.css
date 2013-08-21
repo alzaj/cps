@@ -103,6 +103,10 @@ a.list-group-item.active2 {
   margin-top:10px;
 }
 
+.rightcol .thumbnail{
+	margin-bottom: 20px;
+}
+
 #wrap > .container {
   padding: 15px 15px 0;
 }
