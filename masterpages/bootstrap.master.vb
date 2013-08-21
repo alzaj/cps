@@ -5,9 +5,9 @@ Partial Class bootstrap
 
     Protected Sub Page_Load(sender As Object, e As System.EventArgs) Handles Me.Load
         Me.masterStylePlaceHolder.Controls.Clear()
-        Dim jsText As String = "<script type=""text/javascript"" src=""" + ResolveUrl("~/App_Themes/bootstrap/jquery.js") + """></script>" + vbCrLf
+        Dim jsText As String = "<script type=""text/javascript"" src=""" + ResolveUrl("~/App_Themes/bootstrap/js/jquery.js") + """></script>" + vbCrLf
         jsText += "<script type=""text/javascript"" src=""" + ResolveUrl("~/App_Themes/bootstrap/js/bootstrap.js") + """></script>" + vbCrLf
-        jsText += "<script type=""text/javascript"" src=""" + ResolveUrl("~/App_Themes/bootstrap/respond.js") + """></script>" + vbCrLf
+        jsText += "<script type=""text/javascript"" src=""" + ResolveUrl("~/App_Themes/bootstrap/js/respond.js") + """></script>" + vbCrLf
         Me.masterStylePlaceHolder.Controls.Add(New LiteralControl(jsText))
     End Sub
 
