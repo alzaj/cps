@@ -47,6 +47,6 @@
         <siteMapNode title="Future technology spintronics:Mainz intensifies its cooperation with the renowned experimental physicist Stuart ParkinStuart Parkin of IBM Research – Almaden in San José has become a fellow of the GFK and will be mentoring Mainz" url="~/content/151.aspx" description="Future technology spintronics:Mainz intensifies its cooperation with the renowned experimental physicist Stuart ParkinStuart Parkin of IBM Research – Almaden in San José has become a fellow of the GFK and will be mentoring Mainz"></siteMapNode>
         <siteMapNode title="PROJECTS 2013" url="~/content/190.aspx" description="PROJECTS 2013"></siteMapNode>
     </siteMapNode>
-    <siteMapNode title="Gestaltung" url="~/servicescripts/styles_change.aspx" description=""></siteMapNode>
+    <siteMapNode title="Gestaltung" url="~/sscr/styles_change.aspx" description=""></siteMapNode>
 </siteMapNode>
 </siteMap>
