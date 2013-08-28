@@ -88,7 +88,7 @@ a.list-group-item.active2 {
   margin-top: 10px;
 }
 
-.content .panel .panel-heading
+.content .panel .panel-heading, .rightcol .panel .panel-heading
 {
     font-weight:bold;
 }

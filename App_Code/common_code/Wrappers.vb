@@ -1,3 +1,5 @@
+Imports System.Collections.Generic
+
 ''' <summary>
 ''' Allows setting MasterPage and Theme dynamycally. Redirects to https:\\ if the page must be secure.
 ''' </summary>
@@ -59,6 +61,8 @@ Public Class GeneralWraperPage
 
     Protected useTitlePrefix As Boolean = True
 
+    Protected infPanels As New List(Of OpaInfPanel)
+
     Private Sub Page_Error(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Error
         ErrorReporting.StandardPageErrorHandling()
     End Sub
@@ -105,4 +109,39 @@ Public Class GeneralWraperPage
 
     End Sub
 
+    Public Overridable Sub InitInfoPanels()
+
+    End Sub
+
+    Public Overridable Function RenderInfoPanels() As String
+        Dim ausgabe As New StringBuilder()
+        For Each iP As OpaInfPanel In Me.infPanels
+            ausgabe.Append(iP.RenderPanel)
+        Next
+        Return ausgabe.ToString
+    End Function
+
+    Protected Sub infPanels_Add(iP As OpaInfPanel)
+        Me.infPanels.Add(iP)
+    End Sub
+
+    Protected Sub infPanelsSet_Add(iPSet As OpaInfPanelsSet)
+        For Each opaIP As OpaInfPanel In iPSet.infPanels
+            infPanels_Add(opaIP)
+        Next
+    End Sub
+
+    Public Overridable Sub AddAllwaysObenPanels()
+        infPanelsSet_Add(New infPanelsSet_AllPagesOben)
+    End Sub
+
+    Public Overridable Sub AddAllwaysUntenPanels()
+        infPanelsSet_Add(New infPanelsSet_AllPagesUnten)
+    End Sub
+
+    Private Sub Page_PreInit(sender As Object, e As System.EventArgs) Handles Me.PreInit
+        Me.AddAllwaysObenPanels()
+        Me.InitInfoPanels()
+        Me.AddAllwaysUntenPanels()
+    End Sub
 End Class

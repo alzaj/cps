@@ -11,6 +11,8 @@ Partial Class bootstrap
         Me.masterStylePlaceHolder.Controls.Add(New LiteralControl(jsText))
     End Sub
 
+#Region "Navigation functions"
+
     Public Function RenderNaviItem(nod As SiteMapNode, level As Integer) As String
         Dim ausgabe As String = ""
         If nod.Title.ToLower = "invisible" Or nod.Description.ToLower = "invisible" Then Return ausgabe
@@ -147,5 +149,18 @@ Partial Class bootstrap
 
         Return ausgabe
     End Function
+
+#End Region 'Navigation functions
+
+#Region "infPanels"
+
+    Public Function RenderInfoPanels() As String
+        Dim ausgabe As String = CType(Me.Page, GeneralWraperPage).RenderInfoPanels
+
+        Return ausgabe
+    End Function
+
+#End Region 'infPanels
+
 End Class
 

@@ -44,7 +44,7 @@
 -->
 <div class="row">
 <%-- bootstrap.css.prevVer01 <div class="col-12 col-sm-4 col-lg-3"> --%>
-    <div class="col-xs-12 col-sm-4 col-md-3">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
 
     <div class="list-group">
 
@@ -57,24 +57,17 @@
     </div>
 
 <%-- bootstrap.css.prevVer01 <div class="col-12 col-sm-8 col-lg-6 article"> --%>
-<div class="col-xs-12 col-sm-8 col-md-6 article">
+<div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 article">
 <asp:contentplaceholder id="MainContent" runat="server">
 </asp:contentplaceholder>
 </div>
 
 <%-- bootstrap.css.prevVer01 <div class="col-12 col-sm-12 col-lg-3"> --%>
-<div class="col-xs-12 col-sm-11 col-md-3 rightcol">
-    <div class="thumbnail">
-	  <span class="glyphicon glyphicon-film"></span>
-      <img src="/images/video_thumbnail_190x130px.jpg" alt="..." />
-      <div class="caption">
-        <p><a target="_blank" title="Videolink" href="http://www.uni-mainz.de//presse/18858.php">Prof. Claudia Felser erhält SUR Grant der IBM</a></p>
-        <p><a href="#" class="btn btn-primary">Button</a> <a href="#" class="btn btn-default">Button</a></p>
-      </div>
-    </div>
+<div class="col-xs-12 col-sm-11 col-md-3 col-lg-3 rightcol">
+<%= Me.RenderInfoPanels()%>
 
     <div class="panel panel-info">
-      <div class="panel-heading"><h4>Related links</h4></div>
+      <div class="panel-heading">Related links</div>
       <ul class="list-group">
         <li class="list-group-item"><a href="#rellink1">DFG Research Unit 559</a></li>
         <li class="list-group-item"><a href="#rellink2">MAINZ (MAterials Science IN MainZ)</a></li>
@@ -86,7 +79,7 @@
     </div>
 </div>
 
-      </div>
+</div>
 
       </div>
     </form>
