@@ -1,10 +1,11 @@
 ﻿Imports Microsoft.VisualBasic
 
-Public Class infPanelsSet_Projects20132015_Oben
+Public Class infPanelsSet_example
     Inherits OpaInfPanelsSet
 
     Public Overrides Sub InitPanels()
-        Me.infPanels.Add(New infPanel_0007)
+        Me.infPanels.Add(New infPanel_0001)
+        Me.infPanels.Add(New infPanel_0002)
     End Sub
 
 End Class

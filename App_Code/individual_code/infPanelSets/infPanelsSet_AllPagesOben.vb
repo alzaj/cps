@@ -4,8 +4,7 @@ Public Class infPanelsSet_AllPagesOben
     Inherits OpaInfPanelsSet
 
     Public Overrides Sub InitPanels()
-        Me.infPanels.Add(New infPanel_0003)
-        Me.infPanels.Add(New infPanel_0004)
+        'Me.infPanels.Add(New infPanel_0001)
     End Sub
 
 End Class

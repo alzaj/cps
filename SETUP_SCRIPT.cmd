@@ -13,6 +13,7 @@
 @echo     contains following files and folders:
 @echo     - DIR "App_Code"
 @echo     - DIR "App_Code\common_code"
+@echo     - DIR "App_Code\individual_code"
 @echo     - DIR "App_Themes"
 @echo     - DIR "masterpages"
 @echo     - DIR "servicescripts"
@@ -47,13 +48,16 @@
 @echo          ^<?xml version^="1.0" ?^>
 @echo          ^<configuration ^>
 @echo            ^<system.web ^>
-@echo                <!--
+@echo                ^<!--
 @echo                   Make changes to this file (f.e add new line  to this comment)
 @echo                   to force the webapplication to recompile it's top-level classes
-@echo                -->
+@echo                --^>
 @echo            ^</system.web^>
 @echo          ^</configuration^>
-@echo  7) Script checks if this directory (\\flsrv\share\unimainz_content) contains subdirectory "individual_code"
+@echo  7) Script checks if this directory (\\flsrv\share\unimainz_content) 
+@echo     contains subdirectory "individual_code"
+@echo  7) Script copies all files and directories from \\websrv\share\unimainz\App_Code\individual_code\*
+@echo     nach \\flsrv\share\unimainz_content\App_Code\individual_code\*
 @echo  8) Script creates following symbolic links:
 @echo     - cd C:\inetpub\exampleApp
 @echo     - mklink /D App_Themes \\websrv\share\unimainz\App_Themes

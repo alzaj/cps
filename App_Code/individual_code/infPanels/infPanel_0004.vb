@@ -7,18 +7,19 @@
     End Function
 
     Public Overrides Function PanelColorType() As OpaInfPanel.ColorTypes
-        Return ColorTypes.success
+        Return ColorTypes.inf
     End Function
 
     Public Overrides Function HeaderText() As String
-        Return "infPanel_0004 überal Oben"
+        Return "infPanel_0004"
     End Function
 
     Public Overrides Function BodyText() As String
         Dim ausgabe As New StringBuilder
 
         ausgabe.AppendLine("<img src=""/images/video_thumbnail_190x130px.jpg"" alt=""..."">")
-        ausgabe.AppendLine("<p><a target=""_blank"" title=""Videolink"" href=""http://www.uni-mainz.de//presse/18858.php"">Prof. Claudia Felser erhält SUR Grant der IBM</a></p>")
+        ausgabe.AppendLine("<p>This infPanel is added directly to this page. (see the page's vb-code)</p>")
+
         ausgabe.AppendLine("<p><a href=""#"" class=""btn btn-primary"">Button</a> <a href=""#"" class=""btn btn-default"">Button</a></p>")
 
         Return ausgabe.ToString
