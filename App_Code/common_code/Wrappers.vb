@@ -62,6 +62,7 @@ Public Class GeneralWraperPage
     Protected useTitlePrefix As Boolean = True
 
     Protected infPanels As New List(Of OpaInfPanel)
+    Protected notNeededPanels As New List(Of OpaInfPanel)
 
     Private Sub Page_Error(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Error
         ErrorReporting.StandardPageErrorHandling()
@@ -113,6 +114,10 @@ Public Class GeneralWraperPage
 
     End Sub
 
+    Public Overridable Sub IndicateNotNeededPanels()
+
+    End Sub
+
     Public Overridable Function RenderInfoPanels() As String
         Dim ausgabe As New StringBuilder()
         For Each iP As OpaInfPanel In Me.infPanels
@@ -131,6 +136,10 @@ Public Class GeneralWraperPage
         Next
     End Sub
 
+    Protected Sub infPanels_Remove(iP As OpaInfPanel)
+        Me.notNeededPanels.Add(iP)
+    End Sub
+
     Public Overridable Sub AddAllwaysObenPanels()
         infPanelsSet_Add(New infPanelsSet_AllPagesOben)
     End Sub
@@ -139,9 +148,40 @@ Public Class GeneralWraperPage
         infPanelsSet_Add(New infPanelsSet_AllPagesUnten)
     End Sub
 
+    Private Sub RemoveNotNeededPanels()
+        For Each nnP As OpaInfPanel In Me.notNeededPanels
+            For i As Integer = Me.infPanels.Count - 1 To 0 Step -1
+                If Me.infPanels(i).GetType.ToString = nnP.GetType.ToString Then
+                    Me.infPanels.RemoveAt(i)
+                End If
+            Next
+        Next
+    End Sub
+
+    Private Sub RemoveRedundantPanels()
+        Dim pntr As Integer = 0
+        While pntr < Me.infPanels.Count - 1
+            Dim currentType As String = ""
+            For i As Integer = Me.infPanels.Count - 1 - pntr To 0 Step -1
+                If currentType = "" Then
+                    currentType = Me.infPanels(i).GetType.ToString
+                Else
+                    If Me.infPanels(i).GetType.ToString = currentType Then
+                        Me.infPanels.RemoveAt(i)
+                    End If
+                End If
+            Next
+            pntr += 1
+        End While
+    End Sub
+
     Private Sub Page_PreInit(sender As Object, e As System.EventArgs) Handles Me.PreInit
         Me.AddAllwaysObenPanels()
         Me.InitInfoPanels()
         Me.AddAllwaysUntenPanels()
+
+        Me.IndicateNotNeededPanels()
+        Me.RemoveNotNeededPanels()
+        Me.RemoveRedundantPanels()
     End Sub
 End Class
