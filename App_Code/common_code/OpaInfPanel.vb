@@ -13,6 +13,7 @@ Public Class OpaInfPanel
         video
         contact
         publications
+        link
     End Enum
 
     Public Overridable Function PanelColorType() As ColorTypes
@@ -60,6 +61,8 @@ Public Class OpaInfPanel
                 glyphicon = "<span class=""glyphicon glyphicon-envelope""></span>"
             Case HeaderTypes.publications
                 glyphicon = "<span class=""glyphicon glyphicon-book""></span>"
+            Case HeaderTypes.link
+                glyphicon = "<span class=""glyphicon glyphicon-link""></span>"
         End Select
         Return "<div class=""panel-heading"">" + glyphicon + "&nbsp;&nbsp;" + HeaderText() + "</div>"
     End Function

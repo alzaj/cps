@@ -62,7 +62,10 @@ Public Class GeneralWraperPage
     Protected useTitlePrefix As Boolean = True
 
     Protected infPanels As New List(Of OpaInfPanel)
+    Protected relLinksInfPanel As New infPanel_RelatedLinks
+
     Protected notNeededPanels As New List(Of OpaInfPanel)
+    Protected notNeededRelatedLinks As New List(Of String)
 
     Private Sub Page_Error(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Error
         ErrorReporting.StandardPageErrorHandling()
@@ -110,6 +113,8 @@ Public Class GeneralWraperPage
 
     End Sub
 
+#Region "InfoPanels"
+
     Public Overridable Sub InitInfoPanels()
 
     End Sub
@@ -146,6 +151,7 @@ Public Class GeneralWraperPage
 
     Public Overridable Sub AddAllwaysUntenPanels()
         infPanelsSet_Add(New infPanelsSet_AllPagesUnten)
+        If Me.relLinksInfPanel.linksList.Count > 0 Then infPanels_Add(Me.relLinksInfPanel)
     End Sub
 
     Private Sub RemoveNotNeededPanels()
@@ -175,7 +181,75 @@ Public Class GeneralWraperPage
         End While
     End Sub
 
+#End Region 'InfoPanels
+
+#Region "RelatedLinks"
+    Public Overridable Sub InitRelatedLinks()
+
+    End Sub
+
+    Public Overridable Sub IndicateNotNeededLinks()
+
+    End Sub
+
+    Protected Sub relatedLinks_Add(linkURL As String, linkText As String)
+        Me.relLinksInfPanel.linksList.Add(New KeyValuePair(Of String, String)(linkURL.ToLower, linkText.ToLower))
+    End Sub
+
+    Protected Sub relatedLinksSet_Add(rLSet As OpaRelatedLinksSet)
+        For Each urlAndTitle As KeyValuePair(Of String, String) In rLSet.urlAndTitlePairs
+            relatedLinks_Add(urlAndTitle.Key.ToLower, urlAndTitle.Value.ToLower)
+        Next
+    End Sub
+
+    Protected Sub relatedLinks_Remove(linkUrl As String)
+        Me.notNeededRelatedLinks.Add(linkUrl.ToLower)
+    End Sub
+
+    Public Overridable Sub AddAllwaysObenRelatedLinks()
+        relatedLinksSet_Add(New relLinksSet_AllPagesOben)
+    End Sub
+
+    Public Overridable Sub AddAllwaysUntenRelatedLinks()
+        relatedLinksSet_Add(New relLinksSet_AllPagesUnten)
+    End Sub
+
+    Private Sub RemoveNotNeededRelatedLinks()
+        For Each nnL As String In Me.notNeededRelatedLinks
+            For i As Integer = Me.relLinksInfPanel.linksList.Count - 1 To 0 Step -1
+                If Me.relLinksInfPanel.linksList(i).Key = nnL Then
+                    Me.relLinksInfPanel.linksList.RemoveAt(i)
+                End If
+            Next
+        Next
+    End Sub
+
+    Private Sub RemoveRedundantRelatedLinks()
+        Dim pntr As Integer = 0
+        While pntr < Me.relLinksInfPanel.linksList.Count - 1
+            Dim currentUrl As String = ""
+            For i As Integer = Me.relLinksInfPanel.linksList.Count - 1 - pntr To 0 Step -1
+                If currentUrl = "" Then
+                    currentUrl = Me.relLinksInfPanel.linksList(i).Key
+                Else
+                    If Me.relLinksInfPanel.linksList(i).Key = currentUrl Then
+                        Me.relLinksInfPanel.linksList.RemoveAt(i)
+                    End If
+                End If
+            Next
+            pntr += 1
+        End While
+    End Sub
+#End Region 'RelatedLinks
+
     Private Sub Page_PreInit(sender As Object, e As System.EventArgs) Handles Me.PreInit
+        Me.AddAllwaysObenRelatedLinks()
+        Me.InitRelatedLinks()
+        Me.AddAllwaysUntenRelatedLinks()
+        Me.IndicateNotNeededLinks()
+        Me.RemoveNotNeededRelatedLinks()
+        Me.RemoveRedundantRelatedLinks()
+
         Me.AddAllwaysObenPanels()
         Me.InitInfoPanels()
         Me.AddAllwaysUntenPanels()
