@@ -21,7 +21,11 @@
       <div class="navbar navbar-default">
         <div class="container">
             <a name="page_start"></a>
-			<a class="navbar-brand" href="<%= MyAppSettings.HomePageUrl%>"><%= MyAppSettings.WebsiteMiddleName%></a>
+                <% If Not String.IsNullOrEmpty(MyAppSettings.LogoUrl) Then%>
+                    <a href="<%= MyAppSettings.HomePageUrl%>"><img src="<%= ResolveUrl(MyAppSettings.LogoUrl)%>"></a>
+                <% Else%>
+                    <a class="navbar-brand" href="<%= MyAppSettings.HomePageUrl%>"><%= MyAppSettings.WebsiteMiddleName%></a>                    
+                <% End If%>
 			<ul class="nav nav-pills pull-right">
               <%= RenderTopNaviListItems()%>
 			</ul>
