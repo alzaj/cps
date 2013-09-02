@@ -8,7 +8,7 @@ Public Class MasterOpa
             Dim ausgabe As String = ""
             Try
                 Dim needPrefix As Boolean = CType(Me.Page, GeneralWraperPage).useTitlePrefix
-                If needPrefix Then ausgabe = "deleteThisText " + CType(Me.Page, GeneralWraperPage).PageTitlePrefix
+                If needPrefix Then ausgabe = CType(Me.Page, GeneralWraperPage).PageTitlePrefix
             Catch ex As Exception
             End Try
             Return ausgabe
