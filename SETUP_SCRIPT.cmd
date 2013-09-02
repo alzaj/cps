@@ -14,6 +14,7 @@
 @echo     - DIR "App_Code"
 @echo     - DIR "App_Code\common_code"
 @echo     - DIR "App_Code\individual_code"
+@echo     - DIR "externalsettings"
 @echo     - DIR "App_Themes"
 @echo     - DIR "masterpages"
 @echo     - DIR "servicescripts"
@@ -26,13 +27,7 @@
 @echo  4) Script validates if the target directory is empty
 @echo  5) Script creates in the directory C:\inetpub\exampleApp following subdirectories and files:
 @echo     - DIR "App_Code"
-@echo     - DIR "externalsettings"
 @echo     - DIR "logs"
-@echo     - FILE "externalsettings\externalAppSettings.config" with this content:
-@echo        ^<?xml version^="1.0" encoding="utf-8" ?^>
-@echo        ^<appSettings^>
-@echo          ^<add key="IsDebugMode" value="1" /^>
-@echo        ^</appSettings^>
 @echo  6) Script prompts unser to input the full path to the directory where 
 @echo     content files and web.sitemap are stored
 @echo     (as example I assume the user inputs: \\flsrv\share\unimainz_content)
@@ -61,6 +56,7 @@
 @echo  8) Script creates following symbolic links:
 @echo     - cd C:\inetpub\exampleApp
 @echo     - mklink /D App_Themes \\websrv\share\unimainz\App_Themes
+@echo     - mklink /D externalsettings \\flsrv\share\unimainz_content\externalsettings
 @echo     - mklink Web.Config \\websrv\share\unimainz\Web.Config
 @echo     - mklink Global.asax \\websrv\share\unimainz\Global.asax
 @echo     - mklink default.aspx \\websrv\share\unimainz\default.aspx

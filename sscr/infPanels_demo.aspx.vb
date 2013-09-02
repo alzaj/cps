@@ -8,6 +8,7 @@ Partial Class sscr_infPanels_demo
 
     Public Overrides Sub IndicateNotNeededPanels()
         infPanels_Remove(New infPanel_0003)
+        'Me.infPanels.Clear()
     End Sub
 
     Public Overrides Sub InitRelatedLinks()

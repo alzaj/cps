@@ -11,7 +11,7 @@ Public Class infPanel_RelatedLinks
     End Function
 
     Public Overrides Function PanelColorType() As OpaInfPanel.ColorTypes
-        Return ColorTypes.danger
+        Return ColorTypes.inf
     End Function
 
     Public Overrides Function HeaderText() As String

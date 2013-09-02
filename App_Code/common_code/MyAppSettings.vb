@@ -34,6 +34,12 @@ Public Class MyAppSettings
         End Get
     End Property
 
+    Public Shared ReadOnly Property WebMasterEmail As String
+        Get
+            Return GetStringFromAppSettings("WebMasterEmail")
+        End Get
+    End Property
+
     Public Shared ReadOnly Property SupportPhone As String
         Get
             Return GetStringFromAppSettings("SupportPhone")

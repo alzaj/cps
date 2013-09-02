@@ -396,6 +396,30 @@ Public Class GlobFunctions
         Return False
     End Function
 
+    ''' <summary>
+    ''' Makes from the mail the mailto-hyperlink with some protection agains the email boots
+    ''' </summary>
+    ''' <param name="email"></param>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
+    Public Shared Function MakeProtectedEmailLink(email As String) As String
+        Dim part1 As String = ""
+        Dim part2 As String = ""
+        Dim parts As String() = email.Split("@")
+        If parts.Length > 0 Then
+            part1 = parts(0)
+        End If
+        If parts.Length > 1 Then
+            part2 = parts(1)
+        Else
+            Return part1
+        End If
+
+        Dim ausgabe As String = "<nobr><a href=""mailto:" + part1 + """ onmouseover=""this.href='mailto:' + this.innerHTML + '@" + part2 + "';"">" + part1 + "</a>"
+        ausgabe += "<a href=""mailto:" + part1 + """ onmouseover=""this.href='mailto:' + '" + part1 + "@' + '" + part2 + "';"">@</a>"
+        ausgabe += "<a href=""mailto:" + part1 + """ onmouseover=""this.href='mailto:' + '" + part1 + "@' + this.innerHTML;"">" + part2 + "</a></nobr>"
+        Return ausgabe
+    End Function
 
 #Region "Error reporting"
     Public Shared Sub WriteToLogFile(ByVal text As String, Optional ByVal append As Boolean = True)
