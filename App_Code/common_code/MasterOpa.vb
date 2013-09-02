@@ -7,7 +7,8 @@ Public Class MasterOpa
         Get
             Dim ausgabe As String = ""
             Try
-                ausgabe = CType(Me.Page, GeneralWraperPage).PageTitlePrefix
+                Dim needPrefix As Boolean = CType(Me.Page, GeneralWraperPage).useTitlePrefix
+                If needPrefix Then ausgabe = CType(Me.Page, GeneralWraperPage).PageTitlePrefix
             Catch ex As Exception
             End Try
             Return ausgabe

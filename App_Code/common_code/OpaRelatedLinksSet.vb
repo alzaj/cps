@@ -12,6 +12,6 @@ Public Class OpaRelatedLinksSet
     End Sub
 
     Public Sub AddLink(linkUrl As String, linkTitle As String)
-        Me.urlAndTitlePairs.Add(New KeyValuePair(Of String, String)(linkUrl.ToLower, linkTitle.ToLower))
+        Me.urlAndTitlePairs.Add(New KeyValuePair(Of String, String)(linkUrl.ToLower, linkTitle))
     End Sub
 End Class

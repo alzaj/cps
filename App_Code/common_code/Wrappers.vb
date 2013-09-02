@@ -59,7 +59,7 @@ Public Class GeneralWraperPage
 
     Protected thisPageMustBeSecure As Boolean = False
 
-    Protected useTitlePrefix As Boolean = True
+    Public useTitlePrefix As Boolean = True
 
     Protected infPanels As New List(Of OpaInfPanel)
     Protected relLinksInfPanel As New infPanel_RelatedLinks
@@ -193,12 +193,12 @@ Public Class GeneralWraperPage
     End Sub
 
     Protected Sub relatedLinks_Add(linkURL As String, linkText As String)
-        Me.relLinksInfPanel.linksList.Add(New KeyValuePair(Of String, String)(linkURL.ToLower, linkText.ToLower))
+        Me.relLinksInfPanel.linksList.Add(New KeyValuePair(Of String, String)(linkURL.ToLower, linkText))
     End Sub
 
     Protected Sub relatedLinksSet_Add(rLSet As OpaRelatedLinksSet)
         For Each urlAndTitle As KeyValuePair(Of String, String) In rLSet.urlAndTitlePairs
-            relatedLinks_Add(urlAndTitle.Key.ToLower, urlAndTitle.Value.ToLower)
+            relatedLinks_Add(urlAndTitle.Key.ToLower, urlAndTitle.Value)
         Next
     End Sub
 

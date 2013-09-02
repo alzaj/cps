@@ -134,6 +134,11 @@ a.list-group-item.active2 {
   background-color: #f5f5f5;
 }
 
+ul.list-with-margins li
+{
+    margin-bottom: 10px;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 

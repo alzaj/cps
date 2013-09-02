@@ -17,5 +17,6 @@
 
     Public Overrides Sub AddAllwaysUntenRelatedLinks()
         Me.relatedLinks_Add("http://www.domain3.de", "Added to contentFamily_example Unten")
+        Me.relatedLinksSet_Add(New relLinksSet_example)
     End Sub
 End Class
