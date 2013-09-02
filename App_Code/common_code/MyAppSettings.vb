@@ -21,6 +21,12 @@ Public Class MyAppSettings
         End Get
     End Property
 
+    Public Shared ReadOnly Property LogoUrl As String
+        Get
+            Return GetStringFromAppSettings("LogoUrl")
+        End Get
+    End Property
+
     'Email addresses who wants to receive new registration notifications
     Public Shared ReadOnly Property E_AGENT_EMAILS As String
         Get
