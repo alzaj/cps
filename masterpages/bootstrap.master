@@ -82,7 +82,7 @@
 
     <div id="footer">
       <div class="container">
-        <p class="text-muted credit pull-right"><a href="<%= ResolveUrl("~/sscr/impressum.aspx")%>">Impressum</a></p>
+        <p class="text-muted credit pull-right"><a href="<%= ResolveUrl(MyAppSettings.ImpressumUrl)%>">Impressum</a></p>
       </div>
     </div>
 </body>
