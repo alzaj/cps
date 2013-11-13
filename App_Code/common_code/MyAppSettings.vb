@@ -29,7 +29,7 @@ Public Class MyAppSettings
 
     Public Shared ReadOnly Property ImpressumUrl As String
         Get
-            Return GetStringFromAppSettings("ImpressumUrl")
+            Return GetStringFromAppSettings("ImpressumUrl") + "#debug"
         End Get
     End Property
 
