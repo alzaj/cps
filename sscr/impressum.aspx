@@ -15,18 +15,16 @@
                      </h6>
                      <p>
                         Prof. Dr. Claudia Felser
-                        <br />
-                        Staudinger Weg 9
-                        <br />
-                        Room 01-230
-                        <br />
-                        D-55128 Mainz
-                        <br />
-                        Phone Office  +49 (0)6131 39-22184
-                        <br />
-                        Fax               +49 (0)6131 39 26267
-                        <br />
-                        E-Mail felser-office(at)uni-mainz.de
+                           <br />
+                           Nothnitzer Strasse 40
+                           <br />
+                           D-01187 Dresden
+                           <br />
+                           Phone: +49 351 4646-3004
+                           <br />
+                           Fax: +49 351 4646-3001
+                           <br />
+                           E-Mail: <%= GlobFunctions.MakeProtectedEmailLink("Claudia.Felser@cpfs.mpg.de")%>
                      </p>
                      <p>
                          
@@ -35,10 +33,10 @@
                         Technical questions and suggestions concerning operating this Web site should be directed to <%= GlobFunctions.MakeProtectedEmailLink(MyAppSettings.WebMasterEmail)%>.
                      </p>
                      <p>
-                        Es gelten die allgemeinen Regelungen zu den Internetseiten der Johannes Gutenberg-Universität Mainz 
+                        Es gelten die allgemeinen Regelungen zu den Internetseiten des Max-Planck-Instituts für Chemische Physik fester Stoffe 
                      </p>
                      <p>
-                        <a href="http://www.uni-mainz.de/zentral/impressum.php">http://www.uni-mainz.de/zentral/impressum.php</a>
+                        <a href="http://www.cpfs.mpg.de/web/impressum/">http://www.cpfs.mpg.de/web/impressum/</a>
                      </p>
                      <p>
                          
