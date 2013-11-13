@@ -40,7 +40,7 @@
         <siteMapNode title="ASPIMATT - Advanced spintronic materials and transport phenomena" url="~/content/002.aspx" description="ASPIMATT - Advanced spintronic materials and transport phenomena"></siteMapNode>
         <siteMapNode title="Suche mit Google" url="~/content/048.aspx" description="Suche mit Google"></siteMapNode>
         <siteMapNode title="Index" url="~/content/047.aspx" description="Index"></siteMapNode>
-        <siteMapNode title="Sitemap" url="~/content/064.aspx" description="Sitemap"></siteMapNode>
+        <siteMapNode title="Sitemap" url="~/sscr/sitemap.aspx" description="Sitemap"></siteMapNode>
         <siteMapNode title="Contact" url="~/content/088.aspx" description="Contact"></siteMapNode>
         <siteMapNode title="Wortwolke" url="~/content/095.aspx" description="Wortwolke"></siteMapNode>
         <siteMapNode title="Projects" url="~/content/098.aspx" description="Projects"></siteMapNode>
