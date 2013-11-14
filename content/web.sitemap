@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+<siteMapNode title="AlZaj CPS - Content Presentation System" url="~/content/default.aspx" description="AlZaj CPS - Content Presentation System">
+	<siteMapNode title="Introduction" url="~/content/052.aspx" description="">	</siteMapNode>
+	<siteMapNode title="Features" url="~/content/133.aspx" description="">
+		<siteMapNode title="Feature group 1" url="~/content/170.aspx" description="description for Feature group 1">
+			<siteMapNode title="" url="~/content/174.aspx" description="Description for feature 1.1"></siteMapNode>
+			<siteMapNode title="" url="~/content/175.aspx" description="Description for feature 1.2"></siteMapNode>
+		</siteMapNode>
+		<siteMapNode title="Feature group 2" url="~/content/169.aspx" description="description for Feature group 2">
+			<siteMapNode title="" url="~/content/180.aspx" description="Description for feature 2.1"></siteMapNode>
+			<siteMapNode title="" url="~/content/181.aspx" description="Description for feature 2.2"></siteMapNode>
+		</siteMapNode>
+		<siteMapNode title="Feature group 3" url="~/content/172.aspx" description="description for Feature group 3">
+			<siteMapNode title="" url="~/content/182.aspx" description="Description for feature 3.1"></siteMapNode>
+			<siteMapNode title="" url="~/content/183.aspx" description="Description for feature 3.2"></siteMapNode>
+		</siteMapNode>
+	</siteMapNode>
+	<siteMapNode title="External Components" url="~/content/191.aspx" description="">
+		<siteMapNode title="ASP.NET" url="~/content/130.aspx" description="web application framework"></siteMapNode>
+		<siteMapNode title="Bootstrap" url="~/content/132.aspx" description="front-end framework"></siteMapNode>
+		<siteMapNode title="Jquery" url="~/content/131.aspx" description="cross-browser JavaScript library"></siteMapNode>
+	</siteMapNode>
+    <siteMapNode title="invisible" url="~/content/unassigned.aspx" description="">
+        <siteMapNode title="Imprint" url="~/content/046.aspx" description="Imprint"></siteMapNode>
+        <siteMapNode title="Sitemap" url="~/sscr/sitemap.aspx" description="Sitemap"></siteMapNode>
+        <siteMapNode title="Contact" url="~/content/088.aspx" description="Contact"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode title="Documentation" url="~/sscr/docu.aspx" description="">
+        <siteMapNode title="Contextual Information" url="~/sscr/infPanels_demo.aspx" description="manage information panels in the right column."></siteMapNode>
+    </siteMapNode>
+</siteMapNode>
+</siteMap>

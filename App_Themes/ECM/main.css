@@ -1,0 +1,184 @@
+@import "editor.css";
+@import "pwm.css";
+@import "globals.css";
+@import "language-switch.css";
+
+
+body,html{
+ background-color:#edf4fa;
+}
+
+#page{
+  margin-top: 5px;
+  background-color:#edf4fa;
+}
+
+
+
+#custom-doc{
+ background-color:#fff;
+ background-image: url(images/kachel.gif);
+ background-position: 0px 0px;
+ background-repeat:repeat-y;
+ 
+}
+
+#left{
+ /*background-image: url(images/left.gif);
+ background-position: 0px 0px;
+ background-repeat:no-repeat;
+ min-height:450px;	*/
+	
+}
+
+#right{
+ /*background-image: url(images/right.gif);
+ background-position: 0px 0px;
+ background-repeat:no-repeat;
+ min-height:430px;	*/
+}
+
+.message-right{
+  padding: 5px;  
+  margin-top: 2px;
+  border:1px solid #9D2842;
+}
+
+#main-template{
+ 
+ background-image: url(images/bg.gif);
+ background-position: 0px 0px;
+ background-repeat:no-repeat;
+}
+
+
+#hd{
+ /*  background-image: url(images/hd-bg.gif);
+ background-position: 0px 0px;*/
+}
+
+#bd{
+ background-image: url(images/uleft.gif);
+ background-position: 0px bottom;
+ background-repeat:no-repeat;
+ min-height:533px;
+}
+
+#bd_wrapper{
+
+}
+
+#ft{
+   background-image: url(images/ft-bg.gif);
+ background-position: 0px 0px;
+ background-repeat:no-repeat;
+}
+
+
+
+
+/*Links im Content */
+.csc-row a{
+  font-weight: bold;
+  text-decoration: none;
+  color:#9e283f;
+}
+
+
+
+
+
+
+
+
+div#menu-list-1 a{
+  background-image: url(images/list-icon.gif);
+  background-repeat: no-repeat;
+  background-position: 0px 8px; ;
+  padding-left: 15px;
+    
+}
+
+div#menu-list-1 div.level-2-cur a{
+  background-image: url(images/list-icon_cur.gif);
+  background-repeat: no-repeat;
+  background-position: 0px 7px; ;
+  padding-left: 15px;
+}
+
+div#menu-list-1 div.level-3 a {
+  background-position: 0px 3px;
+}
+
+
+
+/* HEADER */
+div.csc-header h5{
+  margin: 0px;
+  font-size: 10px;
+  color: #fff;
+  background-color: #dae2d7;
+  background-image: url(images/titlebg.gif);
+  background-repeat: no-repeat;
+  background-position: 0px 0px; ;
+  padding-left: 2px;
+  display: block;
+  border-bottom: solid 2px #1F4E28; 
+  
+}
+
+
+
+/* ADDRESS */
+.tx-ttaddress-pi1-team-list a , .tx-ttaddress-pi1-team-list span{
+  font-size: 10px;
+  text-decoration: none;
+}
+
+
+div.tx-ttaddress-pi1{
+  display: block; 
+  height: auto;  
+}
+
+/* PRINT VIEW */
+.printheader, .printfooter{
+    width:100%;
+    text-align:center;
+    text-decoration:underline;
+    color:#808080;
+    margin-bottom:1.5em;
+}
+.printfooter{
+    padding-top: 1.5em;
+}
+
+#printcontent{
+ line-height:1.5em;
+ text-align:left;
+}
+
+#printcontent a{
+    text-decoration:none;
+}
+
+#printcontent h1, #printcontent h2, #printcontent h3, #printcontent h4, #printcontent h5{
+ margin: 1em 0 1em 0;
+ font-weight:bold;
+}
+
+#printcontent h1{
+    font-size:138%;
+}
+
+#printcontent h2{
+    font-size:123%;
+}
+
+#printcontent h3{
+    font-size:108%;
+}
+
+#printcontent h4{
+    font-size:100%;
+}

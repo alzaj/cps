@@ -1,0 +1,78 @@
+﻿<%@ Master Language="VB" CodeFile="SideMenuGreen.master.vb" Inherits="Site" %>
+<%@ Register TagPrefix="cpfs" TagName="News" Src="~/servicescripts/news.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>HaeKo 2011</title>
+</head>
+<body>
+<div id="wrapper">
+<form id="form1" runat="server">
+<div id="header">
+<a name="top"></a>
+<span class="title" style="color:#7CA6A6;">Hemdsärmelkolloquium vom 10. bis 12. März 2011<br />in der <span style="white-space:nowrap;">Dreikönigskirche Dresden</span></span>
+<span class="breadcrumb" runat="server" visible="false">
+<asp:SiteMapPath ID="SiteMapPath1" runat="server">
+</asp:SiteMapPath>
+</span>
+</div>
+<div id="content">
+<div style="position:absolute;right:3em;top:7.5em;">
+<asp:HyperLink ID="printViewLink" runat="server" OnLoad="PrintViewOnLoad" ForeColor="#711515" Target="_blank" Font-Size="85%">Druckversion</asp:HyperLink>
+</div>
+<asp:contentplaceholder id="MainContent" runat="server">
+</asp:contentplaceholder>
+<div style="margin-left:8em;"><br /><br /><img src='<%= Me.ResolveUrl("~/images/minerva.jpg") %>' alt="" />
+    <br /><asp:Label ID="message" runat="server" Text=""></asp:Label>
+</div>
+</div>
+<div id="navigation">
+<ul>
+<asp:Repeater runat="server" ID="menu" DataSourceID="SiteMapDataSource1" EnableViewState="False">
+<ItemTemplate>
+<li id="Li1" runat="server" class='<%# Navigation.GetLiClass(CType(Container.DataItem, SiteMapNode)) %>'>
+<asp:HyperLink ID="HyperLink1" runat="server" class='<%# Navigation.GetLinkClass(CType(Container.DataItem, SiteMapNode)) %>' NavigateUrl='<%# Eval("Url") %>'><%# Eval("Title") %></asp:HyperLink>
+<asp:Literal ID="sub1LiteralStart" runat="server" Text='<%# Me.RenderStartULForSubmenu(CType(Container.DataItem, SiteMapNode).ChildNodes.Count)%>'></asp:Literal>
+<asp:Repeater ID="Repeater1" runat="server" DataSource='<%# CType(Container.DataItem, SiteMapNode).ChildNodes %>'>
+<HeaderTemplate>
+
+</HeaderTemplate>
+<ItemTemplate>
+<li runat="server" class='<%# Navigation.GetLiClass(CType(Container.DataItem, SiteMapNode)) %>'>
+<asp:HyperLink ID="HyperLink2" runat="server" class='<%# Navigation.GetLinkClass(CType(Container.DataItem, SiteMapNode)) %>' NavigateUrl='<%# Eval("Url") %>'><%# Eval("Title") %></asp:HyperLink>
+<asp:Literal ID="sub2StartLiteral" runat="server" Text='<%# Me.RenderStartULForSubmenu(CType(Container.DataItem, SiteMapNode).ChildNodes.Count)%>'></asp:Literal>
+<asp:Repeater ID="Repeater2" runat="server" DataSource='<%# CType(Container.DataItem, SiteMapNode).ChildNodes %>'>
+<HeaderTemplate>
+</HeaderTemplate>
+<ItemTemplate>
+<li>
+<asp:HyperLink ID="HyperLink3" runat="server" class='<%# Navigation.GetLinkClass(CType(Container.DataItem, SiteMapNode)) %>' NavigateUrl='<%# Eval("Url") %>'><%# Eval("Title") %></asp:HyperLink>
+</li>
+</ItemTemplate>
+<FooterTemplate>
+</FooterTemplate>
+</asp:Repeater>
+<asp:Literal ID="sub2EndLiteral" runat="server" Text='<%# Me.RenderEndULForSubmenu(CType(Container.DataItem, SiteMapNode).ChildNodes.Count)%>'></asp:Literal>
+</li>
+</ItemTemplate>
+<FooterTemplate>
+</FooterTemplate>
+</asp:Repeater>
+<asp:Literal ID="sub1EndLiteral" runat="server" Text='<%# Me.RenderEndULForSubmenu(CType(Container.DataItem, SiteMapNode).ChildNodes.Count)%>'></asp:Literal>
+</li></ItemTemplate>
+</asp:Repeater>
+</ul>
+<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+<%-- 
+<div style="margin: 1.5em 0.5em 0 0.5em;font-size: 80%;">
+<cpfs:News runat="server" />
+</div>
+--%>
+</div>
+</form>
+</div>
+</body>
+</html>

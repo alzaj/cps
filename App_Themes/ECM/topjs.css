@@ -1,0 +1,36 @@
+/* MENU_TOP_JS_LAYER_1 */
+
+div#menu-top-js ul.menu li {
+	background-color: transparent;
+	/* border: 1px solid #000000; */
+	margin-right: 0em; /*Außenabstand-rechts */	
+        
+}
+
+div#menu-top-js  {
+      line-height:29px;
+}
+div#menu-top-js ul.menu li a{
+   line-height:21px;
+}
+
+div#menu-top-js ul.menu li.level-2-no{
+	border-width:0px;
+}
+
+
+
+/* HOVER */
+div#menu-top-js ul.menu li.level-2-no a:hover{
+  color: silver;
+  
+}
+/* Breite der 2. Ebene */
+div#menu-top-js ul ul{
+  min-width: 180px;
+}
+*html div#menu-top-js ul ul{
+  width: 180px;
+}
+div#menu-top-js ul.menu li a { color:#355F8D;}/*1: Ebene*/
+div#menu-top-js ul.menu ul a{ color:#355F8D;}/*2. Ebene*/

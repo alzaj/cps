@@ -1,0 +1,534 @@
+/* default styles for extension "tx_felogin_pi1" */
+	.tx-felogin-pi1 label {
+		display: block;
+	}
+/* default styles for extension "tx_indexedsearch" */
+		.tx-indexedsearch .tx-indexedsearch-browsebox LI { display:inline; margin-right:5px; }
+		.tx-indexedsearch .tx-indexedsearch-searchbox INPUT.tx-indexedsearch-searchbox-button { width:100px; }
+		.tx-indexedsearch .tx-indexedsearch-searchbox INPUT.tx-indexedsearch-searchbox-sword { width:150px; }
+		.tx-indexedsearch .tx-indexedsearch-whatis { margin-top:10px; margin-bottom:5px; }
+		.tx-indexedsearch .tx-indexedsearch-whatis .tx-indexedsearch-sw { font-weight:bold; font-style:italic; }
+		.tx-indexedsearch .tx-indexedsearch-noresults { text-align:center; font-weight:bold; }
+		.tx-indexedsearch .tx-indexedsearch-res TD.tx-indexedsearch-descr { font-style:italic; }
+		.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-descr .tx-indexedsearch-redMarkup { color:red; }
+		.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-info { background:#eeeeee; }
+		.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-secHead { margin-top:20px; margin-bottom:5px; }
+		.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-secHead H2 { margin-top:0px; margin-bottom:0px; }
+		.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-secHead TD { background:#cccccc; vertical-align:middle; }
+		.tx-indexedsearch .tx-indexedsearch-res .noResume { color:#666666; }
+		.tx-indexedsearch .tx-indexedsearch-category { background:#cccccc; font-size:16px; font-weight:bold; }
+
+		/* Additional styles, needed for the tableless template_css.tmpl (styles don't conflict with the original template) */
+		.tx-indexedsearch .res-tmpl-css { clear:both; margin-bottom:1em; }
+		.tx-indexedsearch .searchbox-tmpl-css LABEL { margin-right:1em; width:10em; float:left; }
+		.tx-indexedsearch .result-count-tmpl-css, .tx-indexedsearch .percent-tmpl-css { letter-spacing:0; font-weight:normal; margin-top:-1.2em; float:right; }
+		.tx-indexedsearch .info-tmpl-css dt, .tx-indexedsearch dl.info-tmpl-css dd { float:left; }
+		.tx-indexedsearch .info-tmpl-css dd.item-mtime { float:none; }
+		.tx-indexedsearch .info-tmpl-css dd.item-path { float:none; }
+/* default styles for extension "nmlib_yui" */
+/* RTE FIX Blocksatz */
+div.csc-row p.align-justify{text-align:justify;}
+div.csc-row p.align-center{text-align:center;}
+
+/* RTE FIX Tabs */
+div.col-wrapper div.indent, div.col-wrapper p.indent {margin-left:2em;}
+/* RTE FIX Listen */
+div.csc-row ul,div.csc-row ol{ margin-left:2.5em; }
+
+/* default styles for extension "tx_srfreecap_pi2" */
+		.tx-srfreecap-pi2-image { margin-left: 1em; }
+		.tx-srfreecap-pi2-cant-read { font-size: .9em; color:#35006d; }
+		.tx-srfreecap-pi2-cant-read a:link { background-color:transparent; font-weight:bold; text-decoration:none; }
+/* default styles for extension "tx_cssstyledcontent" */
+/* Captions */
+	DIV.csc-textpic-caption-c .csc-textpic-caption { text-align: center; }
+	DIV.csc-textpic-caption-r .csc-textpic-caption { text-align: right; }
+	DIV.csc-textpic-caption-l .csc-textpic-caption { text-align: left; }
+
+	/* Needed for noRows setting */
+	DIV.csc-textpic DIV.csc-textpic-imagecolumn { float: left; display: inline; }
+
+	/* Border just around the image */
+	DIV.csc-textpic-border DIV.csc-textpic-imagewrap .csc-textpic-image IMG {
+		border: 2px solid black;
+		padding: 0px 0px;
+	}
+
+	DIV.csc-textpic-imagewrap { padding: 0; }
+
+	DIV.csc-textpic IMG { border: none; }
+
+	/* DIV: This will place the images side by side */
+	DIV.csc-textpic DIV.csc-textpic-imagewrap DIV.csc-textpic-image { float: left; }
+
+	/* UL: This will place the images side by side */
+	DIV.csc-textpic DIV.csc-textpic-imagewrap UL { list-style: none; margin: 0; padding: 0; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap UL LI { float: left; margin: 0; padding: 0; }
+
+	/* DL: This will place the images side by side */
+	DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image { float: left; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image DT { float: none; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image DD { float: none; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image DD IMG { border: none; } /* FE-Editing Icons */
+	DL.csc-textpic-image { margin: 0; }
+	DL.csc-textpic-image DT { margin: 0; display: inline; }
+	DL.csc-textpic-image DD { margin: 0; }
+
+	/* Clearer */
+	DIV.csc-textpic-clear { clear: both; }
+
+	/* Margins around images: */
+
+	/* Pictures on left, add margin on right */
+	DIV.csc-textpic-left DIV.csc-textpic-imagewrap .csc-textpic-image,
+	DIV.csc-textpic-intext-left-nowrap DIV.csc-textpic-imagewrap .csc-textpic-image,
+	DIV.csc-textpic-intext-left DIV.csc-textpic-imagewrap .csc-textpic-image {
+		display: inline; /* IE fix for double-margin bug */
+		margin-right: 10px;
+	}
+
+	/* Pictures on right, add margin on left */
+	DIV.csc-textpic-right DIV.csc-textpic-imagewrap .csc-textpic-image,
+	DIV.csc-textpic-intext-right-nowrap DIV.csc-textpic-imagewrap .csc-textpic-image,
+	DIV.csc-textpic-intext-right DIV.csc-textpic-imagewrap .csc-textpic-image {
+		display: inline; /* IE fix for double-margin bug */
+		margin-left: 10px;
+	}
+
+	/* Pictures centered, add margin on left */
+	DIV.csc-textpic-center DIV.csc-textpic-imagewrap .csc-textpic-image {
+		display: inline; /* IE fix for double-margin bug */
+		margin-left: 10px;
+	}
+	DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-image .csc-textpic-caption { margin: 0; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-image IMG { margin: 0; }
+
+	/* Space below each image (also in-between rows) */
+	DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-image { margin-bottom: 5px; }
+	DIV.csc-textpic-equalheight DIV.csc-textpic-imagerow { margin-bottom: 5px; display: block; }
+	DIV.csc-textpic DIV.csc-textpic-imagerow { clear: both; }
+
+	/* No margins around the whole image-block */
+	DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-firstcol { margin-left: 0px !important; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-lastcol { margin-right: 0px !important; }
+
+	/* Add margin from image-block to text (in case of "Text w/ images") */
+	DIV.csc-textpic-intext-left DIV.csc-textpic-imagewrap,
+	DIV.csc-textpic-intext-left-nowrap DIV.csc-textpic-imagewrap {
+		margin-right: 10px !important;
+	}
+	DIV.csc-textpic-intext-right DIV.csc-textpic-imagewrap,
+	DIV.csc-textpic-intext-right-nowrap DIV.csc-textpic-imagewrap {
+		margin-left: 10px !important;
+	}
+
+	/* Positioning of images: */
+
+	/* Above */
+	DIV.csc-textpic-above DIV.csc-textpic-text { clear: both; }
+
+	/* Center (above or below) */
+	DIV.csc-textpic-center { text-align: center; /* IE-hack */ }
+	DIV.csc-textpic-center DIV.csc-textpic-imagewrap { margin: 0 auto; }
+	DIV.csc-textpic-center DIV.csc-textpic-imagewrap .csc-textpic-image { text-align: left; /* Remove IE-hack */ }
+	DIV.csc-textpic-center DIV.csc-textpic-text { text-align: left; /* Remove IE-hack */ }
+
+	/* Right (above or below) */
+	DIV.csc-textpic-right DIV.csc-textpic-imagewrap { float: right; }
+	DIV.csc-textpic-right DIV.csc-textpic-text { clear: right; }
+
+	/* Left (above or below) */
+	DIV.csc-textpic-left DIV.csc-textpic-imagewrap { float: left; }
+	DIV.csc-textpic-left DIV.csc-textpic-text { clear: left; }
+
+	/* Left (in text) */
+	DIV.csc-textpic-intext-left DIV.csc-textpic-imagewrap { float: left; }
+
+	/* Right (in text) */
+	DIV.csc-textpic-intext-right DIV.csc-textpic-imagewrap { float: right; }
+
+	/* Right (in text, no wrap around) */
+	DIV.csc-textpic-intext-right-nowrap DIV.csc-textpic-imagewrap { float: right; clear: both; }
+	/* Hide from IE5-mac. Only IE-win sees this. \*/
+	* html DIV.csc-textpic-intext-right-nowrap .csc-textpic-text { height: 1%; }
+	/* End hide from IE5/mac */
+
+	/* Left (in text, no wrap around) */
+	DIV.csc-textpic-intext-left-nowrap DIV.csc-textpic-imagewrap { float: left; clear: both; }
+	/* Hide from IE5-mac. Only IE-win sees this. \*/
+	* html DIV.csc-textpic-intext-left-nowrap .csc-textpic-text { height: 1%; }
+	/* End hide from IE5/mac */
+	
+	/* Browser fixes: */
+	
+	/* Fix for unordered and ordered list with image "In text, left" */
+	.csc-textpic-intext-left ol, .csc-textpic-intext-left ul { padding-left: 40px; overflow: auto; height: 1%; }
+DIV.csc-textpic DIV.csc-textpic-imagerow-last { margin-bottom: 0; }
+/* default styles for extension "nmlib_yui_page" */
+/* NMLIB-PAGE-BASE */
+.stopFloat{line-height: 0.001%;clear: both;display: none;}
+
+#custom-doc .yui-g, #custom-doc .yui-gb, #custom-doc .yui-g .yui-u, #custom-doc .yui-gb .yui-u {
+margin: 0px; padding:0px; min-height: 1em;
+}
+.typo3-editPanel-previewBorder{border: dotted 1px red;}
+  
+html, html body, * { font-size: 12px;font-family: verdana, arial, helvetica;color: #000000;}
+html{ background:#ffffff none repeat scroll 0%;} 
+html body{ background-color: #ffffff;}
+  
+  /* Basis Link Farbe */
+  html body a{color: #000000;}
+  
+  html body #main-template {display: block;}
+  html body #main-template div.csc-row{clear:both;}
+   
+   
+  div#custom-doc{
+    width: 808px;
+    text-align: left;
+    margin: auto;
+  }
+  
+  div#custom-doc div.csc-row{
+    line-height: 1.5em;
+  }
+  
+  #custom-doc .yui-g, 
+  #custom-doc .yui-gb,
+  #custom-doc .yui-g yui-u,
+  #custom-doc .yui-gb yui-u {
+   margin: 0px;
+   padding:0px;
+   
+  }
+  
+  
+  div#custom-doc #main-template{
+    width: 808px;
+  } 
+  
+  /* HEAD */
+  div#custom-doc #main-template div#hd{
+    width: 808px;
+    display: block;
+    height: 114px;
+    background-color: ;
+  }
+  
+  /* BODY */
+  div#custom-doc div#bd{
+    width: 808px; 
+    display: block;
+    height: auto;
+    background-color: ;
+  } 
+  
+  #bd, #bd_wrapper{  }
+    
+  /* FOOTER */
+  #custom-doc #ft{
+    width: 808px;
+    display: block;
+    height: 45px;
+    background-color: ;
+  }
+  
+  
+  /* ScrollPane */
+  #scroll-normal{
+   height: auto;
+   overflow: none;
+  }
+  
+  
+
+  
+  /**
+   * 1-Spalten
+   */
+  #custom-doc .yui-g .left-normal-right {
+  	width: 808px;
+  } 
+  
+  /**
+   * 2-Spalten
+   */
+  #custom-doc .yui-g .normal-right{ 
+   width: 666px;
+  }
+  
+  #custom-doc .yui-g .left-normal {
+  	width: 697px;
+  }
+  
+  /**
+   * 3-Spalten   yui-gb
+   */
+  #custom-doc .yui-gb .left, #custom-doc .yui-g .left {
+  	width: 142px;
+  }
+
+  #custom-doc .yui-gb .normal, #custom-doc .yui-g .normal{
+  	 width: 555px;
+  }
+
+  #custom-doc .yui-gb .right, #custom-doc .yui-g .right{
+  	 width: 111px;
+  }
+  
+  /*header,body,footer - paddings*/
+  #custom-doc #bd .yui-g .left .col-wrapper, #custom-doc #bd .yui-gb .left .col-wrapper{
+    margin: 0px 6px 0px 15px;
+    padding: 0;
+  }
+  
+  #custom-doc #bd .yui-g .normal .col-wrapper,  #custom-doc #bd .yui-gb .normal .col-wrapper{
+    margin: 10px 10px 0px 10px;
+    padding: 0;
+  }
+  
+  #custom-doc #bd .yui-g .normal-right .col-wrapper, #custom-doc #bd .yui-g .left-normal .col-wrapper{
+   margin: 10px 10px 0px 10px;
+    padding: 0;
+  }
+  
+  /* right */
+  #custom-doc #bd .yui-g div.right .col-wrapper, #custom-doc #bd .yui-gb .right .col-wrapper{
+    margin: 0px 10px 0px 10px;
+    padding: 0;
+  }
+  
+  /* all  --    left-normal-right */
+  #custom-doc #bd .yui-g div.left-normal-right .col-wrapper, #custom-doc #bd .yui-gb .left-normal-right .col-wrapper{
+    margin: 0px 10px 0px 10px;
+    padding: 0;
+  }
+  
+  
+  div.sub-25-25-25-25 .yui-u{width: 24.99%;}
+  
+  
+  
+  
+  
+  
+  div.col-wrapper h1{font-size:138.5%;}
+  div.col-wrapper h2{font-size:123.1%;}
+  div.col-wrapper h3{font-size:108%;}
+  div.col-wrapper h1, .col-wrapper h2, .col-wrapper h3{margin:1em 0 1em 0;}
+  
+  div.col-wrapper h1,div.col-wrapper h2,div.col-wrapper h3,div.col-wrapper h4,div.col-wrapper h5,div.col-wrapper h6{font-weight:bold; color: #000000; }
+  div.col-wrapper strong{font-weight:bold;}
+  div.col-wrapper abbrdiv.col-wrapper acronym{border-bottom:1px dotted #000;cursor:help;} 
+  em{font-style:italic;}
+  
+  blockquote,ul,ol,dl{margin:1em;}
+  ol,ul,dl{margin-left:2em;}
+  ol li{list-style:decimal outside;}
+  ul li{list-style:disc outside;}
+  dl dd{margin-left:1em;}
+  th,td{border:0px solid #000;padding:0.5em;}
+  th{font-weight:bold;text-align:center;}
+  caption{margin-bottom:.5em;text-align:center;}
+  p,fieldset,table,pre{margin-bottom:1em;}
+  input[type=text],input[type=password],textarea{width:12.25em;}
+  
+  /* RTE fix */
+  div.col-wrapper p{
+  	margin-bottom:1em;
+  }
+  
+  div.col-wrapper div.indent, div.col-wrapper p.indent { margin-left: 2em; }
+ 
+  
+  /* ADMIN PANEL */
+  #admPanel{
+  
+  }
+  
+  .typo3-adminPanel-hRow{
+    line-height: 2.0em;
+  }
+  .typo3-adminPanel-itemHRow{
+    line-height: 2.0em;
+  }
+  
+  .editpanel-blackline{
+    background-color: #000;
+  }
+  
+  .nmlib-editpanel{
+   background-color: #000;
+  }
+  
+  .frontEndEditIcons{border: groove 1px silver;width: 1em;height: 1em;}
+  
+/*END_OF_NMLINB_CSS*/
+/* default styles for extension "user_nmlib_yui_menu_top" */
+   
+   /* Defaulte an treemenu */
+   div#menu_top, 
+   div#menu_top_1,
+   div#menu_top_2,
+   div#menu_top_3{
+     clear:both;
+   }
+   
+   /* Defaulte an treemenu */
+   div#menu_top ul li, div#menu_top ul li a, 
+   div#menu_top_1 ul li, div#menu_top_1 ul li a,  
+   div#menu_top_2 ul li, div#menu_top_2 ul li a,
+   div#menu_top_3 ul li, div#menu_top_3 ul li a{
+    display: block;
+	float: left;
+   }
+   
+   /* treemenu */
+   div#menu_top ul li a,
+   div#menu_top_1 ul li a,
+   div#menu_top_2 ul li a,
+   div#menu_top_3 ul li a{
+    line-height: 1.5em;
+    
+    
+   }
+   
+   /* */
+   
+   
+   
+/* default styles for extension "user_nmlib_yui_menu_tree" */
+   
+   /* Defaulte an Level1 */
+   div#navigation ul li a, div#navigation ul li span{
+     display: block;
+     line-height: 1.5em;
+          
+     font-size: 1em;
+     font-weight: normal;
+     color: #000000;
+     text-align: left;
+     text-decoration: none;
+     background-color: none;
+     border: none;
+     /* margin: {$nmlib.menu.tree.no.margin};
+     padding: {$nmlib.menu.tree.no.padding};
+     */
+   }
+   
+   
+   /* HOVER */   
+   div#navigation ul li a:hover{
+     color:#000000;
+     border: none;
+     background-color: none;
+   }
+   
+   /* Reset UL and LI */
+   div#navigation ul, div#navigation ul li { margin: 0px; padding: 0px; list-style-type: none; }
+   
+   
+   div#navigation ul.level-1 li a{
+    font-size: 1em;
+    padding: 0px 0px 0px 0px;
+   }
+   
+   div#navigation ul.level-2 li a{
+    font-size: 1em;
+    padding: 0px 0px 0px 0px;
+   }
+   
+   div#navigation ul.level-3 li a{
+    font-size: 1em;
+    padding: 0px 0px 0px 0px;
+   }
+   
+/* default styles for extension "ux_nmlib_menu_top_js1" */
+div#menu-top-js ul.menu, 
+div#menu-top-js ul.menu li,
+div#menu-top-js ul.menu ul { list-style-type: none;margin:0;padding:0; }
+
+div#menu-top-js ul.menu li a {
+    display: block;
+    padding: 3px 10px 3px 10px;
+    font-weight:normal;
+    border: 0px solid #000000;
+    color:#000000;
+    background-color:#ffffff;
+}
+
+div#menu-top-js ul.menu ul a { margin:0px; padding: 0 10px; line-height: 2em;}
+
+div#menu-top-js ul.menu li {
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+    background-image: none;
+    background-color: #FFFFFF;
+    float:left;
+    border: 0px solid #000000;
+}
+
+div#menu-top-js ul.menu ul {
+    margin:0;
+    padding: 0 0 0 0;
+    position: absolute;
+    background-color: #FFFFFF;
+    border:1px solid #000000;
+    display:none;
+    min-width:auto;
+}
+
+/* IE-Hack für die Breite */
+*html div#menu-top-js ul.menu ul {
+    width:auto;
+}
+
+/* Dies sind die Klassenstile für das Untermenü wenn sich die Maus */
+/* über der Liste  befindet (.hover siehe JavaScript oben) */
+div#menu-top-js ul.menu ul.hover, 
+div#menu-top-js ul.menu li.hover ul, 
+div#menu-top-js ul.menu li:hover ul  {
+    display:block;
+}
+
+div#menu-top-js ul.menu ul li {
+    float:none;
+    background-color: transparent;
+}
+
+
+
+/* MENU_TOP_JS_LAYER_1 */
+.menu-top-js-2{  }
+.menu-top-js-2 a{
+  line-height: 2em; 
+  display:block;
+  text-align:left;
+  padding: 3px 10px;
+}
+
+.menu-top-js-2-level-2-no{
+ color: #000000;
+ display: block;
+ line-height: 1.5em;
+ padding: 3px 10px;
+ text-align:left;
+}
+
+/* default styles for extension "ux_nmlib_yui_menu_teaser_gfx" */
+/* MENU TEASER GFX - begin */
+div#menu-teaser-gfx div#menu-teaser-gfx-wrapper{width: auto !interhint;}
+div#menu-teaser-gfx div.sub-50-50,div#menu-teaser-gfx div.sub-33-33-33,div#menu-teaser-gfx div.sub-25-25-25-25{width:100%;}
+div#menu-teaser-gfx div.sub-50-50 div.menu-teaser-gfx-item{width:49.99%;}
+div#menu-teaser-gfx div.sub-33-33-33 div.menu-teaser-gfx-item {width:33.333%;}
+div#menu-teaser-gfx div.sub-33-33-33 div.menu-teaser-gfx-item a {width:100%;display:block; }
+div#menu-teaser-gfx div.sub-25-25-25-25 div.menu-teaser-gfx-item{width:24.999%;}
+div#menu-teaser-gfx div#menu-teaser-gfx-wrapper { clear:both;}
+div#menu-teaser-gfx div#menu-teaser-gfx-wrapper div.menu-teaser-gfx-item{  border-width: 0px; float: left; height: auto;margin:0px;padding:0px;display:block;}
+div#menu-teaser-gfx div#menu-teaser-gfx-wrapper div.menu-teaser-gfx-item{
+ background-image: url(/fileadmin/layouts/nopic.jpg);
+ background-repeat:no-repeat;
+ background-position:center;
+}
+/* MENU TEASER GFX - end */

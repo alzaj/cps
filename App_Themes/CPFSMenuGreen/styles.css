@@ -1,0 +1,108 @@
+UL {	PADDING-LEFT: 0px; MARGIN: 10px 5px 10px -5px}
+
+.list UL{padding-left:20px;}
+
+OL {	PADDING-LEFT: 0px; MARGIN: 10px 5px}
+
+LI {PADDING-LEFT: 0px; MARGIN-LEFT: 20px}
+
+.imageRight {MARGIN-BOTTOM: 10px; MARGIN-LEFT: 10px}
+
+.marked{padding-left: 20px;background-image: url(images/marked.gif);background-repeat: no-repeat;}
+
+UL.markedPDF{margin-left: 0;padding-left: 0;list-style: none;}
+
+UL.markedPDF LI{margin-left:0;padding-left: 20px;background-image: url(images/pdf.gif);background-repeat: no-repeat;}
+
+IMG {BORDER:0px;}
+
+BODY {FONT-SIZE: 10px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif}
+
+TABLE {FONT-SIZE: 10px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif}
+
+A {FONT-SIZE: 10px; COLOR: #cc3328; FONT-FAMILY: verdana,arial,sans-serif; TEXT-DECORATION: none}
+
+A:hover {FONT-SIZE: 10px; COLOR: #cc3328; FONT-FAMILY: verdana,arial,sans-serif; TEXT-DECORATION:underline;}
+
+.content {FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; LINE-HEIGHT: 14px; FONT-STYLE: normal; FONT-FAMILY: verdana, arial, sans-serif; TEXT-DECORATION: none}
+
+H1, H1 A {FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana,helvetica; TEXT-DECORATION: none}
+
+H2 {	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana,helvetica; TEXT-DECORATION: none}
+H3 {	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana,helvetica; TEXT-DECORATION: none}
+H4 {	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana,helvetica; TEXT-DECORATION: none}
+H5 {	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana,helvetica; TEXT-DECORATION: none}
+H6 {	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana,helvetica; TEXT-DECORATION: none}
+H1:hover {FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana,helvetica; TEXT-DECORATION: none}
+H2:hover {FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana,helvetica; TEXT-DECORATION: none}
+H3:hover {FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana,helvetica; TEXT-DECORATION: none}
+H4:hover {FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana,helvetica; TEXT-DECORATION: none}
+H5:hover {FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana,helvetica; TEXT-DECORATION: none}
+H6:hover {FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: verdana,helvetica; TEXT-DECORATION: none}
+
+.contHeadRed {FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #cc3328; LINE-HEIGHT: 14px; FONT-STYLE: normal; FONT-FAMILY: verdana,arial,sans-serif; TEXT-DECORATION: none}
+.contentGrey {FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #666666; LINE-HEIGHT: 14px; FONT-STYLE: normal; FONT-FAMILY: verdana, arial, sans-serif; TEXT-DECORATION: none}
+.linkBlack {FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; LINE-HEIGHT: 14px; FONT-STYLE: normal; FONT-FAMILY: verdana,arial,sans-serif; TEXT-DECORATION: none}
+.linkBlack:hover {FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #cc3328; LINE-HEIGHT: 14px; FONT-STYLE: normal; FONT-FAMILY: verdana,arial,sans-serif; TEXT-DECORATION: none}
+.linkRed {FONT-SIZE: 10px; COLOR: #cc3328; LINE-HEIGHT: 14px; FONT-STYLE: normal; FONT-FAMILY: verdana,arial,sans-serif; TEXT-DECORATION: none}
+.linkRed:hover {FONT-SIZE: 10px; COLOR: #cc3328; LINE-HEIGHT: 14px; FONT-STYLE: normal; FONT-FAMILY: verdana,arial,sans-serif; TEXT-DECORATION: none}
+.button {FONT-WEIGHT: bold; FONT-SIZE: 9px; COLOR: #666666; FONT-STYLE: normal; FONT-FAMILY: verdana,arial,sans-serif; TEXT-DECORATION: none}
+
+.contNavi {FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #666666; LINE-HEIGHT: 12px; FONT-FAMILY: verdana,arial,sans-serif; TEXT-DECORATION: none}
+.contNavi:link {FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #666666; LINE-HEIGHT: 12px; FONT-FAMILY: verdana,arial,sans-serif; TEXT-DECORATION: none}
+.contNavi:visited {FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #666666; LINE-HEIGHT: 12px; FONT-FAMILY: verdana,arial,sans-serif; TEXT-DECORATION: none}
+.contNavi:active {FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #666666; LINE-HEIGHT: 12px; FONT-FAMILY: verdana,arial,sans-serif; TEXT-DECORATION: none}
+.contNavi:hover {FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #cc3328; LINE-HEIGHT: 12px; FONT-FAMILY: verdana,arial,sans-serif; TEXT-DECORATION: none}
+
+.headlineNavi {color:#FFFFFF;font-family:verdana,arial,sans-serif;font-size:10px;font-style:normal;font-weight:bold;text-decoration:none;}
+
+.more {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: verdana,arial,sans-serif; TEXT-DECORATION: none
+}
+.more:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #cc3328; FONT-FAMILY: verdana,arial,sans-serif; TEXT-DECORATION: none
+}
+FORM {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana,arial,sans-serif
+}
+.form {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana,arial,sans-serif
+}
+TEXTAREA {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana,arial,sans-serif
+}
+INPUT {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana,arial,sans-serif
+}
+SELECT {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana,arial,sans-serif
+}
+checkbox {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: verdana,arial,sans-serif
+}
+
+.no_spa_pad{border-spacing:0; *border-collapse:collapse;}
+.no_spa_pad td{padding:0;}
+
+/*Navigation*/
+.navseparator{height:2px;}
+.navrow {border-style:solid;border-color:#E0E0E0;border-width:1px;height:41px;}
+.navrow A:visited, .navrow A:link,.navrow A:active
+{text-decoration:none;display: block; color: #666666; padding: 8px;width:140px; line-height:24px;}
+.navrow A:hover{background-color:#C9DBD9;}
+.navrow a.linkActive{background-color:#C9DBD9;}
+
+/* PRINT VIEW */
+.printheader, .printfooter{
+    width:100%;
+    text-align:center;
+    text-decoration:underline;
+    color:#808080;
+    margin-bottom:1.5em;
+}
+
+.printfooter{
+    padding-top: 1.5em;
+}
+
+

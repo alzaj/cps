@@ -1,0 +1,151 @@
+html { min-width: 600px; }
+
+body, div, th, h2, h3, h4 { /* redundant rules for bad browsers  */  
+    font-family: verdana,sans-serif;
+	font-size:    x-small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: small;
+	color: #666666;
+}  
+
+td { 
+    font-family: verdana,sans-serif;
+	/*font-size:    x-small;*/
+	font-size: small;
+}  
+
+.clearhack { display: inline; } /*Clears Box Model Hack in IE5*/
+
+body {
+	background: #E6F2F2;
+	color: #666666;
+	padding: 1em 20px 3em 20px;
+	margin: 0;
+}
+
+a { color: #CC3300; }
+a:hover { color: #666666; }
+a:active { color: #000; }
+
+p { line-height: 140%; }
+
+h1,h2 {
+	font-family: trebuchet ms;
+	font-weight: bold;
+	color: #666666;
+}
+
+h1 {
+	font-size: 180%;
+	margin: 0;
+}
+
+h1 a { text-decoration: none; color: #666666; }
+h1 a:hover { border-bottom: 1px dotted #666; color: #000; }
+
+h2 {
+	font-size: 140%;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #CCC;
+	/*margin: 0;*/
+}
+
+p.note {
+	background: #EEE;
+	padding: 4px;
+	font-family: tahoma;
+	font-size: 85%;
+	line-height: 130%;
+	margin-top: 0;
+}
+
+/* CPfS */
+.nowrap
+{
+    white-space:nowrap;
+}
+
+/* Scedule Table */
+table.scedule
+{
+    border-collapse:collapse;
+}
+
+table.scedule td
+{
+    vertical-align:top;
+    padding:5px;
+}
+
+td.left
+{
+    border-left-style:solid;
+    white-space:nowrap;
+}
+
+td.right
+{
+    border-right-style:solid;
+    white-space:nowrap;
+}
+
+td.bottom
+{
+    border-bottom-style:solid;
+}
+
+td.daycaption
+{
+    text-align:center;
+    font-weight:bold;
+    font-size:large;
+}
+
+td.separator
+{
+    height:10px;
+}
+
+td.cage, td.magn, td.cata, td.comb, td.post
+{
+    font-weight:bold;
+    color:White;    
+    border-style:solid;
+}
+
+td.cage{background-color:#974C5D;border-color:#974C5D;}
+td.magn{background-color:#4F81BD;border-color:#4F81BD;}
+td.cata{background-color:#748C42;border-color:#748C42;}
+td.comb{background-color:#F79646;border-color:#F79646;}
+td.work{background-color:#DBE5F1;font-weight:bold;border-style:solid;}
+td.post{background-color:#99CCFF;border-color:#99CCFF;text-align:center;}
+
+tr.pause td{background-color:#FFFFCC;}
+
+
+td.cageframe, td.magnframe, td.cataframe, td.combframe, td.workframe
+{border-width:thin;}
+
+td.cageframe{border-color:#974C5D;}
+td.magnframe{border-color:#4F81BD;}
+td.cataframe{border-color:#748C42;}
+td.combframe{border-color:#F79646;}
+td.workframe{border-color:#DBE5F1;}
+
+.changemark
+{
+    color:Lime;
+}
+
+.toptable td { vertical-align:top;}
+
+.sponsor img, .sponsor a img{ border:0 none;}
+
+table.logos td{padding:1.5em;}
+ul.logos li img,table.logos td img{margin-top:0.5em;margin-bottom:0.5em; border-style:none; border-width:0;}
+ul.logos li a, table.logos td a { color: #666666; text-decoration:none;}
+ul.logos li a:hover, table.logos td a:hover { color: #CC3300;}
+
+
+/* End CPfS */

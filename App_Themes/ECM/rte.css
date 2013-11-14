@@ -1,0 +1,8 @@
+html body #custom-doc sub{
+  font-size: 0.7em;
+  vertical-align: sub;
+}
+html body #custom-doc sup{
+font-size: 0.7em;
+vertical-align: super;
+}
