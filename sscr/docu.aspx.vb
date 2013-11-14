@@ -1,5 +1,5 @@
-﻿Partial Class _046
+﻿
+Partial Class sscr_docu
     Inherits GeneralWraperPage
 
 End Class
-

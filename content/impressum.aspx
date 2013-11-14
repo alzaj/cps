@@ -1,13 +1,12 @@
-﻿<%@ Page Title="Contact" Language="VB" AutoEventWireup="false" CodeFile="088.aspx.vb" Inherits="_088" %>
+﻿<%@ Page Language="VB" Title="Imprint" AutoEventWireup="false" CodeFile="impressum.aspx.vb" Inherits="content_impressum" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
 <div class="sixcol editorcontent" id="spaltemitte">
                   <div class="content">
                      <h1>
-                        Contact
+                        Impressum
                      </h1>
-
-                     <%= GlobFunctions.MakeProtectedEmailLink("alzaj@yahoo.com")%>
+                     Editor: <%= GlobFunctions.MakeProtectedEmailLink("alzaj@yahoo.com")%>
 
                   </div>
                </div>               

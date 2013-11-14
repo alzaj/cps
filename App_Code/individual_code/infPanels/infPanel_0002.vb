@@ -8,7 +8,7 @@ Public Class infPanel_0002
     End Function
 
     Public Overrides Function PanelColorType() As OpaInfPanel.ColorTypes
-        Return ColorTypes.success
+        Return ColorTypes.warning
     End Function
 
     Public Overrides Function HeaderText() As String

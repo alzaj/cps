@@ -4,6 +4,7 @@
     Public Overrides Sub AddAllwaysObenPanels()
         MyBase.AddAllwaysObenPanels()
         Me.infPanels_Add(New infPanel_0003)
+        Me.infPanels_Add(New infPanel_0005)
     End Sub
 
     Public Overrides Sub AddAllwaysUntenPanels()

@@ -1,48 +1,46 @@
-﻿<%@ Page Title="ASPIMATT - Advanced spintronic materials and transport phenomena" Language="VB" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="_default" %>
+﻿<%@ Page Title="Welcome" Language="VB" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="_default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
 <div class="sixcol editorcontent" id="spaltemitte">
-                  <div class="content">
+    <div class="content">
         <div class="page-header">
-          <h1>ASPIMATT - Advanced spintronic materials and transport phenomena</h1>
+          <h1>Content Presentation System</h1>
         </div>
-					 
-
 
 					 <div class="panel panel-default clearfix">
-					 	<div class="panel-heading">03.11.2011:  EU-Förderung von €2,4 Mio. für Claudia Felser</div>
+					 	<div class="panel-heading">14.11.2013: Huawei Ascend G700 - your new phone</div>
 						<div class="panel-body">
-						    <a href="http://www.uni-mainz.de/presse/49102.php" title="Bildlink" class="pull-left">
-							    <img src="/images/personal_09_felser_145x100.jpg" />
+						    <a href="http://www.huawei.com" title="Bildlink" class="pull-left" target="_blank">
+							    <img src="images/huawei-logo.png" alt="huawei logo" />
 						    </a>
 						
-                               <p>Mainzer Chemikerin erhält ERC Advanced Grant für den Ausbau der Materialforschung auf Basis von Heusler-Verbindungen
-                               <a href="http://www.uni-mainz.de/presse/49102.php" title="Link">... <img src="Bilder_zentral/pfeil_news_blau.gif" /></a></p>
+                               <p>
+                               Released: autumn 2013, Dual SIM (Dual stand-by), 720 x 1280 5.0 '', 2 GB RAM, 8 GB Flash, GPS, Bluetooth 4.0, Android 4.2, MediaTek Cortex-A7 MT6589 Quad-core 1.2 GHz, Li-Ion 2150 mAh battery
+                               <br /><br />
+                               <a href="http://www.gsmarena.com/huawei_ascend_g700-5633.php" title="GSMArena" target="_blank">More ...</a></p>
 					    </div>
 					 </div>
 					 
 
 					 <div class="panel panel-default clearfix">
-					 	<div class="panel-heading">22.08.2011 - 23.08.2011: Annual Meeting of ASPIMATT JST-DFG Research Unit</div>
+					 	<div class="panel-heading">14.08.2011: Projekt in einem vorläufigen funktionierenden Zustand wurde eingecheckt in Git</div>
 						<div class="panel-body">						
 							 <p>
-                             Annual Meeting of ASPIMATT JST-DFG Research Unit, <br />
-                             Villa Denis, Diemerstein/Kaiserslautern 							 
+Anforderungen:
 							 </p>
-                             <p>with the ASPIMATT school on "Advanced Spintronic Materials and Transport Phenomena" August 24-27, 2011</p>
-							 <p><a  target="_blank" href="pdfs/ASPIMATTMeetingSchool2011Program170811Hb.pdf">Program</a> 
-							    <a href="pdfs/ASPIMATTMeetingSchool2011Program170811Hb.pdf" title="Link">... <img src="Bilder_zentral/pfeil_news_blau.gif" /></a></p>
+<ul>
+<li>Webanwendung für Seiten mit relativ wenig Inhalt.</li>
+<li>Als DBMS soll das Dateisystem dienen.</li>
+<li>Infrastruktur von Microsoft (OS Windows 7, IIS, ASP.NET)</li>
+<li>Möglichkeit den Inhalt getrennt von der Renderlogik auf dem Dateisystem zu speichern</li>
+<li>Möglichkeit für jede Webseite sowie die zentrale Renderlogik nutzen, als auch eigenes Verhalten zu implementieren.</li>
+<li>Responsive Layout - die Darstellung passt sich auf die Grosse des Bildschirms ein.</li>
+<li>Kontextinformationen in der rechten spalte</li>
+</ul>
                         </div>
 					 </div>
 					 
-                     <% If Not SiteMap.CurrentNode Is Nothing AndAlso SiteMap.CurrentNode.Equals(SiteMap.RootNode) Then%>
-                        This is rootnode
-                     <% Else %>
-                        This is NOT rootnode
-                     <% End If%>
-
- 
                      <br />
-                                       </div>
-               </div>               
+    </div>
+</div>               
 </asp:Content>

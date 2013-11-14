@@ -1,56 +1,9 @@
-﻿<%@ Page Title="Task 1: New materials for spin filter effect and perpendicular transport" Language="VB" AutoEventWireup="false" CodeFile="130.aspx.vb" Inherits="_130" %>
+﻿<%@ Page Title="" Language="VB" AutoEventWireup="false" CodeFile="130.aspx.vb" Inherits="_130" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
 <div class="sixcol editorcontent" id="spaltemitte">
                   <div class="content">
-                     <h1>
-                        Task 1: New materials for spin filter effect and perpendicular transport
-                     </h1><!-- Indexüberschrift:  -->
-                     <!-- Inhaltsverzeichnis -->
-                     <div class="linkliste">
-                        <a href="#L_1_1_A_New_materials_research_for_high_spin_polarization__Naganuma__Tezuka_–_Sendai_" title="Link">1.1-A New materials research for high spin polarization (Naganuma, Tezuka – Sendai)</a>
-                     </div>
-                     <div class="linkliste">
-                        <a href="#L_1_2_A_Theory_of_the_electronic_and_magnetic_structure_of_advanced_spintronic_materials_with_emphasis_on_spectroscopy_and_properties__Chadov__Fecher_–_Mainz_" title="Link">1.2-A Theory of the electronic and magnetic structure of advanced spintronic materials with emphasis on spectroscopy and properties (Chadov, Fecher – Mainz)</a>
-                     </div>
-                     <div class="linkliste">
-                        <a href="#L_1_3_A__Investigation_of_the_electronic_structure_of_buried_layers_and_interfaces_using_high_energy_photoemission__Balke__Fecher__Felser_–_Mainz_" title="Link">1.3-A Investigation of the electronic structure of buried layers and interfaces using high energy photoemission (Balke, Fecher, Felser – Mainz)</a>
-                     </div>
-                     <div class="linkliste">
-                        <a href="#L_1_4_B_Theoretical_studies_on_spin_dependent_transport_phenomena_in_heterostructures_based_on_half_metallic_Heusler_alloys__Shirai_–_Sendai_" title="Link">1.4-B Theoretical studies on spin-dependent transport phenomena in heterostructures based on half-metallic Heusler alloys (Shirai – Sendai)</a>
-                     </div>
-                     <div class="linkliste">
-                        <a href="#L_1_5_B_Direct_measurement_of_spin_injection_efficiency_and_dynamics_in_model_systems_for_advanced_Heusler_based_spintronics_devices__Cinchetti__Aeschlimann_–_K’lautern_" title="Link">1.5-B Direct measurement of spin-injection efficiency and dynamics in model systems for advanced Heusler-based spintronics devices (Cinchetti, Aeschlimann – K’lautern)</a>
-                     </div><a name="L_1_1_A_New_materials_research_for_high_spin_polarization__Naganuma__Tezuka_–_Sendai_"></a>
-                     <h2>
-                        1.1-A New materials research for high spin polarization (Naganuma, Tezuka – Sendai)
-                     </h2>Controlling high spin polarized currents is most important factor for spintronics devices. For this purpose, magnetic tunnel junctions using Co based full Heusler alloy as electrode and spin-filter devices using oxide materials (includes CoFe<sub>2</sub>O<sub>4</sub>, Fe<sub>3</sub>O<sub>4</sub>, γ-Fe<sub>2</sub>O<sub>3</sub>, BiFeO<sub>3</sub>, etc.) as barrier are attracted much attention. It has been reported that the atomic disordering, defect, and interfacial structure have a significant influence on the electronic structure and their magneto-transport properties. Thus, knowing atomic ordering, defects, and interfacial structure in conjunction with magneto-transport properties is of importance to obtain a high spin polarization current. We examine the influence of electric structure on the atomic ordering, defect, and interfacial structure in these alloys films, to realize the control of highly spin polarization current.
-                     <div class="separator">
-                        <a href="#page_start" title="To top of page"><img src="Bilder_zentral/pfeil_top_blau.gif" width="12" height="4" alt="To top of page" border="0" /> To top of page</a> 
-                     </div><a name="L_1_2_A_Theory_of_the_electronic_and_magnetic_structure_of_advanced_spintronic_materials_with_emphasis_on_spectroscopy_and_properties__Chadov__Fecher_–_Mainz_"></a>
-                     <h2>
-                        1.2-A Theory of the electronic and magnetic structure of advanced spintronic materials with emphasis on spectroscopy and properties (Chadov, Fecher – Mainz)
-                     </h2>This project develops and applies theoretical methods to investigate the electronic structure of advanced spintronic materials and calculates their relevant physical properties that are based on the band structure and density of states that are magnetic moments, Curie temperatures, phonon spectra, exchange coupling and magnetic anisotropies including reorientation transitions, magnon spectra, specific heat, conductivity, magnetoresistance, optical, photoemission and photoabsorption spectra. Extensions of LSDA to include dynamical correlations will be of importance to explain the results of all experimental groups working with spectroscopic methods. Stepwise, the methods will be improved and applied to the materials investigated by ASPIMATT. Attention will be paid on the design of new semiconducting as well as tetragonal materials with high Z atoms (e.g.: Mn<sub>2-x</sub>YGa, Y=Fe, Pt) exhibiting perpendicular anisotropy for CPP-GMR and other devices for spintransport. Special emphasis will be given on interfaces, spin dependent transport phenomena, spectroscopic properties and photoemission.
-                     <div class="separator">
-                        <a href="#page_start" title="To top of page"><img src="Bilder_zentral/pfeil_top_blau.gif" width="12" height="4" alt="To top of page" border="0" /> To top of page</a> 
-                     </div><a name="L_1_3_A__Investigation_of_the_electronic_structure_of_buried_layers_and_interfaces_using_high_energy_photoemission__Balke__Fecher__Felser_–_Mainz_"></a>
-                     <h2>
-                        1.3-A Investigation of the electronic structure of buried layers and interfaces using high energy photoemission (Balke, Fecher, Felser – Mainz)
-                     </h2>This project will produce thin films of advanced spintronic materials and performs in-situ investigation by photoelectron spectroscopy. The investigation of the bulk electronic structure by photoemission is already challenging and even higher demands occur in the case of buried layers and interfaces. Photoemission with hard X-ray excitation (HAXPES) in combination with spin resolution is, at present, the only method that is able to solve that problem for spintronic materials. HAXPES will be used to investigate the electronic structure of buried layers, interfaces, and devices. The in-situ study of the thin films allows to investigate the electronic structure step-by-step during the growth of devices (eg. for CPP-GMR) to optimize their physical properties. Besides the materials used in other groups of ASPIMATT (e.g.: Co2YZ) new tetragonal Heusler compounds (e.g.: Mn2-xYGa, Y=Fe, Pt) with perpendicular anisotropy will be investigated. The combination of thin film production with HAXPES in a laboratory system will allow the in-situ investigation of the electronic structure. High resolution valence band spectroscopy of the materials will be performed at synchrotron facilities.
-                     <div class="separator">
-                        <a href="#page_start" title="To top of page"><img src="Bilder_zentral/pfeil_top_blau.gif" width="12" height="4" alt="To top of page" border="0" /> To top of page</a> 
-                     </div><a name="L_1_4_B_Theoretical_studies_on_spin_dependent_transport_phenomena_in_heterostructures_based_on_half_metallic_Heusler_alloys__Shirai_–_Sendai_"></a>
-                     <h2>
-                        1.4-B Theoretical studies on spin-dependent transport phenomena in heterostructures based on half-metallic Heusler alloys (Shirai – Sendai)
-                     </h2>We investigate spin-dependent transport phenomena in heterostructures composed of half-metallic Heusler alloys (Co<sub>2</sub>CrAl, Co<sub>2</sub>FeSi, Co<sub>2</sub>MnSi) and non-magnetic metals (Cr, Ag, Au) or semiconductors (Si, Ge, GaAs) by using first-principles calculations on the basis of the density functional theory.  The goals of our project are as follows: (1) theoretical assessment of half-metallic Heusler alloys as a spin polarizer in current perpendicular to plane (CPP) giant magnetoresistance (GMR) and other spintronic devices, and (2) providing guidelines for realizing efficient spin injection from half-metallic Heusler alloys into semiconductors. In particular, the influences of thermal spin fluctuation as well as atomic disorder on spin-dependent transport phenomena should be inspected extensively in order to confirm the usefulness of half-metallic Heusler alloys.  The theoretical findings could offer an insight into microscopic interpretations of observed phenomena and also useful guidelines for focusing target materials in realizing required properties.
-                     <div class="separator">
-                        <a href="#page_start" title="To top of page"><img src="Bilder_zentral/pfeil_top_blau.gif" width="12" height="4" alt="To top of page" border="0" /> To top of page</a> 
-                     </div><a name="L_1_5_B_Direct_measurement_of_spin_injection_efficiency_and_dynamics_in_model_systems_for_advanced_Heusler_based_spintronics_devices__Cinchetti__Aeschlimann_–_K’lautern_"></a>
-                     <h2>
-                        1.5-B Direct measurement of spin-injection efficiency and dynamics in model systems for advanced Heusler-based spintronics devices (Cinchetti, Aeschlimann – K’lautern)
-                     </h2>This project addresses the fundamental issues connected to the realization of advanced pure Heusler-based room temperature spintronics devices. Focus will be put on the basic building block of every such device, namely the heterojunction between a spin injector (SI) and a spin conductor (SC) material. The specific functionality of SI/SC building blocks will be characterized in terms of two fundamental properties: (i) the spin-injection efficiency at the SI-SC interface; and (ii) the spin diffusion length in the SC itself. Experimentally, the quantities (i) and (ii) will be accessible by implementing an established experimental strategy based on the spin-and time-resolved two-photon photoemission (STR-2PPE). It allows to correlate the efficiency of spin-injection with the static spin-dependent properties of the considered interface as well as to distinguish unambiguously between interface and bulk spin-dependent properties of the considered SI/SC heterojunction. The provided experimental evidence will allow identifying the best suited SI/SC building blocks for developing the foundations of future advanced spintronics devices.
-                     <div class="separator">
-                        <a href="#page_start" title="To top of page"><img src="Bilder_zentral/pfeil_top_blau.gif" width="12" height="4" alt="To top of page" border="0" /> To top of page</a> 
-                     </div>                  </div>
+                  
+                  </div>
                </div>               
 </asp:Content>
