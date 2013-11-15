@@ -17,7 +17,7 @@
 @echo     - DIR "externalsettings"
 @echo     - DIR "App_Themes"
 @echo     - DIR "masterpages"
-@echo     - DIR "servicescripts"
+@echo     - DIR "sscr"
 @echo     - FILE "Web.Config"
 @echo     - FILE "Global.asax"
 @echo     - FILE "default.aspx"
@@ -49,11 +49,14 @@
 @echo                --^>
 @echo            ^</system.web^>
 @echo          ^</configuration^>
-@echo  7) Script checks if this directory (\\flsrv\share\unimainz_content) 
-@echo     contains subdirectory "individual_code"
-@echo  7) Script copies all files and directories from \\websrv\share\unimainz\App_Code\individual_code\*
-@echo     nach \\flsrv\share\unimainz_content\App_Code\individual_code\*
-@echo  8) Script creates following symbolic links:
+@echo  8) Script checks if this directory (\\flsrv\share\unimainz_content) 
+@echo     contains subdirectories
+@echo     - "individual_code"
+@echo     - "externalsettings"
+@echo  9) Script copies all files and directories: 
+@echo     - from \\websrv\share\unimainz\App_Code\individual_code\* nach \\flsrv\share\unimainz_content\App_Code\individual_code\*
+@echo     - from \\websrv\share\unimainz\App_Code\externalsettings\* nach \\flsrv\share\unimainz_content\App_Code\externalsettings\*
+@echo  10) Script creates following symbolic links:
 @echo     - cd C:\inetpub\exampleApp
 @echo     - mklink /D App_Themes \\websrv\share\unimainz\App_Themes
 @echo     - mklink /D externalsettings \\flsrv\share\unimainz_content\externalsettings
@@ -63,16 +66,16 @@
 @echo     - cd App_Code
 @echo     - mklink /D common_code \\websrv\share\unimainz\App_Code\common_code
 @echo     - mklink /D individual_code \\flsrv\share\unimainz_content\individual_code
-@echo  9) Script prompts user to input the name of the website
+@echo  11) Script prompts user to input the name of the website
 @echo     (as example I assume the user inputs: unimainzWebSite1)
-@echo  10) for the website unimainzWebSite1 script checks following:
+@echo  12) for the website unimainzWebSite1 script checks following:
 @echo      - if the applications pool identity has read permissions for \\websrv\share\unimainz
 @echo      - if the applications pool identity has read permissions for C:\inetpub\exampleApp
 @echo      - if the applications pool identity has read permissions for \\flsrv\share\unimainz_content\
-@echo  10) for the website unimainzWebSite1 script creates following virtual directories:
+@echo  13) for the website unimainzWebSite1 script creates following virtual directories:
 @echo      - "content" pointing to "\\flsrv\share\unimainz_content\content"
 @echo      - "masterpages" pointing to \\websrv\share\unimainz\masterpages
-@echo      - "servicescripts" pointing to \\websrv\share\unimainz\servicescripts
+@echo      - "sscr" pointing to \\websrv\share\unimainz\sscr
 @echo.
 @echo.
 @pause
