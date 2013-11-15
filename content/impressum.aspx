@@ -6,7 +6,7 @@
                      <h1>
                         Impressum
                      </h1>
-                     Editor: <%= GlobFunctions.MakeProtectedEmailLink("alzaj@yahoo.com")%>
+                     Editor: <%= GlobFunctions.MakeProtectedEmailLink(MyAppSettings.WebMasterEmail)%>
 
                   </div>
                </div>               

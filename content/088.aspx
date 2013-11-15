@@ -7,7 +7,7 @@
                         Contact
                      </h1>
 
-                     <%= GlobFunctions.MakeProtectedEmailLink("alzaj@yahoo.com")%>
+                     <%= GlobFunctions.MakeProtectedEmailLink(MyAppSettings.WebMasterEmail)%>
 
                   </div>
                </div>               
